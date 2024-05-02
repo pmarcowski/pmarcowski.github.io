@@ -1,53 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Przemyslaw Marcowski | Personal Website</title>
-  <link rel="icon" href="favicon.ico" type="image/png">
-  <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:300" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/simple-icons-font@v11/font/simple-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/theme.css">
-</head>
-<body>
-  <main>
-    <div class="intro">Hello, I'm Przemek!</div>
-    <div class="tagline">PhD | Researcher | Data Science & Analytics</div>
-    <div class="icons-social-container">
-      <div class="icons-social">
-        <a href="https://github.com/pmarcowski" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github" aria-hidden="true" title="Github"></i>
-          <span class="sr-only">Github</span>
-        </a>
-        <a href="https://www.linkedin.com/in/przemyslaw-marcowski/" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin" aria-hidden="true" title="LinkedIn"></i>
-          <span class="sr-only">LinkedIn</span>
-        </a>
-        <a href="https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-google-scholar" aria-hidden="true" title="Google Scholar"></i>
-          <span class="sr-only">Google Scholar</span>
-        </a>
-        <a href="https://www.researchgate.net/profile/Przemyslaw-Marcowski" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-researchgate" aria-hidden="true" title="Researchgate"></i>
-          <span class="sr-only">Researchgate</span>
-        </a>
-        <a href="https://osf.io/4v2dz" target="_blank" rel="noopener noreferrer" class="icon-osf">
-          <i class="si si-osf" aria-hidden="true" title="Open Science Network"></i>
-          <span class="sr-only">Open Science Network</span>
-        </a>
-        <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-circle-user" aria-hidden="true" title="CV"></i>
-          <span class="sr-only">CV</span>
-        </a>
-        <a href="mailto:p.marcowski@gmail.com">
-          <i class="fas fa-envelope" aria-hidden="true" title="Email"></i>
-          <span class="sr-only">Email</span>
-        </a>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Przemyslaw Marcowski</title>
+      <meta name="description" content="Personal website of Przemyslaw Marcowski, a PhD researcher specializing in data science and analytics.">
+      <meta name="keywords" content="Przemyslaw Marcowski, PhD, researcher, data science, analytics, personal website">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <link rel="stylesheet" href="styles.css" />
+      <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "Person",
+           "name": "Przemyslaw Marcowski",
+           "jobTitle": "PhD Researcher",
+           "url": "https://przemyslawmarcowski.com/",
+           "description": "PhD researcher specializing in data science and analytics",
+           "sameAs": [
+             "https://github.com/pmarcowski",
+             "https://www.linkedin.com/in/przemyslaw-marcowski/",
+             "https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en"
+           ]
+         }
+      </script>
+   </head>
+   <body class="light" id="top">
+      <header class="header center">
+         <h3>
+            <a href="https://przemyslawmarcowski.com" class="link"
+               >PM.</a
+               >
+         </h3>
+         <nav class="nav center">
+            <ul class="nav__list center">
+               <li class="nav__list-item">
+                  <a class="link link--nav" href="#projects">Projects</a>
+               </li>
+               <li class="nav__list-item">
+                  <a class="link link--nav" href="#skills">Skills</a>
+               </li>
+               <li class="nav__list-item">
+                  <a class="link link--nav" href="#contact">Contact</a>
+               </li>
+            </ul>
+            <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            </button>
+            <button
+               type="button"
+               aria-label="toggle navigation"
+               class="btn btn--icon nav__hamburger"
+               >
+            <i aria-hidden="true" class="fas fa-bars"></i>
+            </button>
+         </nav>
+      </header>
+      <main>
+         <!-- About -->
+         <div class="about center">
+            <h1>Hi, I'm <span class="about__name">Przemek.</span></h1>
+            <h2 class="about__role">A PhD researcher specializing in data science & analytics.</h2>
+            <p class="about__desc">
+               I use data to find answers, solve problems, and make things more interesting. 
+               Data is a reflection of us – our biology, choices, behaviors, and interactions. 
+               I like discovering the stories it can tell.
+            </p>
+            <div class="about__contact center">
+               <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing">
+               <span class="btn btn--outline">Resume</span>
+               </a>
+               <a
+                  href="https://github.com/pmarcowski"
+                  aria-label="github"
+                  class="link link--icon"
+                  >
+               <i aria-hidden="true" class="fab fa-github"></i>
+               </a>
+               <a
+                  href="https://www.linkedin.com/in/przemyslaw-marcowski/"
+                  aria-label="linkedin"
+                  class="link link--icon"
+                  >
+               <i aria-hidden="true" class="fab fa-linkedin"></i>
+               </a>
+               <a
+                  href="https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en"
+                  aria-label="google-scholar"
+                  class="link link--icon"
+                  >
+               <i aria-hidden="true" class="fab fa-google-scholar"></i>
+               </a>
+            </div>
+         </div>
+         <!-- Projects -->
+         <section id="projects" class="section projects">
+            <h2 class="section__title">Projects</h2>
+            <div class="projects__grid">
+               <div class="project">
+                  <h3>Prisoner's Dilemma game</h3>
+                  <p class="project__description">
+                     Simulation of the the Iterated Prisoner's Dilemma game using various 
+                     strategies. Plays a tournament among agents with different strategies, 
+                     calculates the average score per move for each strategy combination, 
+                     and visualizes the score distribution for each strategy.
+                  </p>
+                  <ul class="project__stack">
+                     <li class="project__stack-item">Python</li>
+                     <li class="project__stack-item">Game Theory</li>
+                     <li class="project__stack-item">Visualization</li>
+                  </ul>
+                  <a
+                     href="https://github.com/pmarcowski/prisoners-dilemma"
+                     aria-label="source code"
+                     class="link link--icon"
+                     >
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+               </div>
+               <div class="project">
+                  <h3>Two-armed bandit game with reinforcement learning analysis</h3>
+                  <p class="project__description">
+                     Application with a Two-Armed Bandit game where players choose between 
+                     two arms that offer different reward potentials. Player's choices are 
+                     analyzed using a reinforcement learning model and the decision history 
+                     characteristics are visualized.
+                  </p>
+                  <ul class="project__stack">
+                     <li class="project__stack-item">R</li>
+                     <li class="project__stack-item">Shiny</li>
+                     <li class="project__stack-item">Reinforcement Learning</li>
+                  </ul>
+                  <a
+                     href="https://github.com/pmarcowski/two-armed-bandit"
+                     aria-label="source code"
+                     class="link link--icon"
+                     >
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+                  <a
+                     href="https://pmarcowski.shinyapps.io/two-armed-bandit"
+                     aria-label="live preview"
+                     class="link link--icon"
+                     >
+                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  </a>
+               </div>
+               <div class="project">
+                  <h3>Simulation of behavior spread in a social network</h3>
+                  <p class="project__description">
+                     Simulating the spread of behaviors within a grid-based social network. 
+                     Agents adopt behaviors based on specific probabilities. Dynamics of 
+                     behavior spread are calculatged and visualized.
+                  </p>
+                  <ul class="project__stack">
+                     <li class="project__stack-item">R</li>
+                     <li class="project__stack-item">Simulation</li>
+                     <li class="project__stack-item">Visualization</li>
+                  </ul>
+                  <a
+                     href="https://github.com/pmarcowski/behavior-propagation"
+                     aria-label="source code"
+                     class="link link--icon"
+                     >
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+               </div>
+               <div class="project">
+                  <h3>Maze generation and solving</h3>
+                  <p class="project__description">
+                     Generating random mazes with the Recursive Backtracking algorithm 
+                     and solving them using chosen path finding algorithm. Includes maze 
+                     and solution visualization.
+                  </p>
+                  <ul class="project__stack">
+                     <li class="project__stack-item">Python</li>
+                     <li class="project__stack-item">Algorithms</li>
+                     <li class="project__stack-item">Visualization</li>
+                  </ul>
+                  <a
+                     href="https://github.com/pmarcowski/maze-solver"
+                     aria-label="source code"
+                     class="link link--icon"
+                     >
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+               </div>
+               <div class="project">
+                  <h3>Dog growth prediction model and application</h3>
+                  <p class="project__description">
+                     Building a Bayesian predictive model for dog growth trajectories. 
+                     Includes a Shiny app for generating personalized growth predictions. 
+                     Leverages a von Bertalanffy growth curve for biologically-inspired 
+                     modeling.
+                  </p>
+                  <ul class="project__stack">
+                     <li class="project__stack-item">R</li>
+                     <li class="project__stack-item">Shiny</li>
+                     <li class="project__stack-item">Bayesian Modeling</li>
+                  </ul>
+                  <a
+                     href="https://github.com/pmarcowski/doge-growth"
+                     aria-label="source code"
+                     class="link link--icon"
+                     >
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+                  <a
+                     href="https://pmarcowski.shinyapps.io/doge-growth"
+                     aria-label="live preview"
+                     class="link link--icon"
+                     >
+                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  </a>
+               </div>
+               <div class="project">
+                  <h3>Simulation of forest fire dynamics</h3>
+                  <p class="project__description">
+                     Simulating forest fire spread with a stochastic grid-based model. 
+                     Tracks tree states to visualize fire progression on a forest landscape. 
+                     Captures dynamic interactions between cells to explore fire behavior.
+                  </p>
+                  <ul class="project__stack">
+                     <li class="project__stack-item">R</li>
+                     <li class="project__stack-item">Simulation</li>
+                     <li class="project__stack-item">Visualization</li>
+                  </ul>
+                  <a
+                     href="https://github.com/pmarcowski/forest-fire"
+                     aria-label="source code"
+                     class="link link--icon"
+                     >
+                  <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+               </div>
+            </div>
+         </section>
+         <!-- Skills -->
+         <section class="section skills" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <ul class="skills__list">
+               <li class="skills__list-item btn btn--plain">R</li>
+               <li class="skills__list-item btn btn--plain">Python</li>
+               <li class="skills__list-item btn btn--plain">SQL</li>
+               <li class="skills__list-item btn btn--plain">Git</li>
+               <li class="skills__list-item btn btn--plain">Shiny</li>
+               <li class="skills__list-item btn btn--plain">Machine Learning</li>
+               <li class="skills__list-item btn btn--plain">Statistical Modeling</li>
+               <li class="skills__list-item btn btn--plain">Data Mining</li>
+               <li class="skills__list-item btn btn--plain">Data Visualization</li>
+               <li class="skills__list-item btn btn--plain">Experimental Design</li>
+               <li class="skills__list-item btn btn--plain">Quantitative Research</li>
+               <li class="skills__list-item btn btn--plain">Problem Solving</li>
+            </ul>
+         </section>
+         <!-- Contact -->
+         <section class="section contact center" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <a href="mailto:p.marcowski@gmail.com">
+            <span class="btn btn--outline">Email me</span>
+            </a>
+         </section>
+      </main>
+      <footer class="footer">
+         <a
+            href="https://przemyslawmarcowski.com"
+            class="link footer__link"
+            >
+         Personal Website of Przemyslaw Marcowski
+         </a>
+      </footer>
+      <div class="scroll-container">
+         <div class="scroll-top">
+            <a aria-label="Scroll up" href="#top">
+            <i aria-hidden="true" class="fas fa-arrow-up"></i>
+            </a>
+         </div>
       </div>
-    </div>
-  </main>
-</body>
+      <script src="./script.js"></script>
+   </body>
 </html>
