@@ -314,6 +314,22 @@ main {
   margin-left: 0.5em;
 }
 
+.publications__list {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 2em;
+}
+
+.publications__list-item {
+  margin-bottom: 1.5em;
+  color: var(--clr-fg);
+}
+
+.publications__list-item strong {
+  font-style: strong;
+  color: var(--clr-primary);
+}
+
 .skills__list {
   max-width: 450px;
   width: 95%;
