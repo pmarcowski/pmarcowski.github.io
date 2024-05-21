@@ -102,7 +102,7 @@ button {
 }
 
 .link:hover {
-  color: var(--clr-primary);
+  color: var (--clr-primary);
 }
 
 .link::before {
@@ -139,6 +139,7 @@ button {
   font-size: 0.9rem;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
+  text-align: center;
 }
 
 .btn--outline {
@@ -370,6 +371,14 @@ main {
   font-size: 1.8rem;
   transition: transform 0.2s ease-in-out;
 }
+
+.all-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+/* Responsive styles */
 
 @media (max-width: 600px) {
   .header {
