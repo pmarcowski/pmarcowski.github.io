@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Przemyslaw Marcowski</title>
       <meta name="description" content="Personal website of Przemyslaw Marcowski, a PhD computational scientist specializing in data science and analytics.">
       <meta name="keywords" content="Przemyslaw Marcowski, PhD, computational scientist, data science, data analytics, decision science, personal website">
@@ -11,11 +11,11 @@
       <meta property="og:url" content="https://przemyslawmarcowski.com/" />
       <meta property="og:type" content="website" />
       <link rel="icon" href="favicon.ico" type="image/x-icon">
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+      <!-- External CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-      <link rel="stylesheet" href="styles.css" />
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="styles.css">
+      <!-- Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-62KDXH6Q7G"></script>
       <script>
          window.dataLayer = window.dataLayer || [];
@@ -25,286 +25,361 @@
       </script>
       <script type="application/ld+json">
          {
-         "@context": "https://schema.org",
-         "@type": "Person",
-         "name": "Przemyslaw Marcowski",
-         "alternateName": ["Przemek Marcowski", "Przemysław Marcowski"],
-         "jobTitle": "PhD computational scientist",
-         "url": "https://przemyslawmarcowski.com/",
-         "description": "PhD computational scientist specializing in data science and analytics",
-         "sameAs": [
-         "https://github.com/pmarcowski",
-         "https://www.linkedin.com/in/przemyslaw-marcowski/",
-         "https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en"
-         ]
+           "@context": "https://schema.org",
+           "@type": "Person",
+           "name": "Przemyslaw Marcowski",
+           "alternateName": ["Przemek Marcowski", "Przemysław Marcowski"],
+           "jobTitle": "PhD computational scientist",
+           "url": "https://przemyslawmarcowski.com/",
+           "description": "PhD computational scientist specializing in data science and analytics",
+           "sameAs": [
+             "https://github.com/pmarcowski",
+             "https://www.linkedin.com/in/przemyslaw-marcowski/",
+             "https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en"
+           ]
          }
       </script>
    </head>
-   <body class="light" id="top">
-      <header class="header center">
-         <h3>
-            <a href="https://przemyslawmarcowski.com" class="link">PM.</a>
-         </h3>
-         <nav class="nav center">
-            <ul class="nav__list center">
-               <li class="nav__list-item">
-                  <a class="link link--nav" href="#skills">Skills</a>
-               </li>
-               <li class="nav__list-item">
-                  <a class="link link--nav" href="#projects">Projects</a>
-               </li>
-               <li class="nav__list-item">
-                  <a class="link link--nav" href="#publications">Publications</a>
-               </li>
-               <li class="nav__list-item">
-                  <a class="link link--nav" href="#contact">Contact</a>
-               </li>
-            </ul>
-            <button type="button" aria-label="toggle theme" class="btn btn--icon">
-            <i aria-hidden="true" id="btn-theme" class="fas fa-moon" alt="Toggle Theme"></i>
-            </button>
-            <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-            <i aria-hidden="true" class="fas fa-bars"></i>
-            </button>
-         </nav>
-      </header>
-      <main>
-         <!-- About -->
-         <div class="about center">
-            <h1>Hi, I'm <span class="about__name">Przemek.</span></h1>
-            <h2 class="about__role">
-               A PhD computational scientist<br>
-               specializing in data science&nbsp;&amp;&nbsp;analytics.
-            </h2>
-            <p class="about__desc">
-               I use data to find answers, solve problems, and make things more interesting. 
-               Data is a reflection of us – our biology, behaviors, choices, and interactions. 
-               I like discovering the stories it can tell.
-            </p>
-            <div class="about__contact center">
-               <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-               <span class="btn btn--outline">Resume</span>
-               </a>
-               <a href="https://github.com/pmarcowski" aria-label="github" class="link link--icon" target="_blank" rel="noopener noreferrer">
-               <i aria-hidden="true" class="fab fa-github" alt="GitHub"></i>
-               </a>
-               <a href="https://www.linkedin.com/in/przemyslaw-marcowski/" aria-label="linkedin" class="link link--icon" target="_blank" rel="noopener noreferrer">
-               <i aria-hidden="true" class="fab fa-linkedin" alt="LinkedIn"></i>
-               </a>
-               <a href="https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en" aria-label="google-scholar" class="link link--icon" target="_blank" rel="noopener noreferrer">
-               <i aria-hidden="true" class="fab fa-google-scholar" alt="Google Scholar"></i>
-               </a>
-            </div>
+   <body class="light-theme">
+      <!-- Header with navigation -->
+      <header class="header" role="banner">
+         <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+               <a href="#" class="nav__logo" aria-label="PM. Home">PM.</a>
+               <ul class="nav__list">
+                  <li><a href="#about" class="nav__link">About</a></li>
+                  <li><a href="#skills" class="nav__link">Skills</a></li>
+                  <li><a href="#projects" class="nav__link">Projects</a></li>
+                  <li><a href="#publications" class="nav__link">Publications</a></li>
+                  <li><a href="#contact" class="nav__link">Contact</a></li>
+               </ul>
+               <!-- Theme toggle button -->
+               <button id="theme-toggle" class="nav__theme-toggle" 
+                  aria-label="Toggle dark theme">
+               <i class="fas fa-moon" aria-hidden="true"></i>
+               </button>
+               <!-- Hamburger menu for mobile -->
+               <button class="nav__hamburger" aria-label="Toggle menu">
+               <i class="fas fa-bars" aria-hidden="true"></i>
+               </button>
+            </nav>
          </div>
-         <!-- Skills -->
-         <section class="section skills" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <ul class="skills__list">
-               <li class="skills__list-item btn btn--plain">R</li>
-               <li class="skills__list-item btn btn--plain">Python</li>
-               <li class="skills__list-item btn btn--plain">SQL</li>
-               <li class="skills__list-item btn btn--plain">Git</li>
-               <li class="skills__list-item btn btn--plain">Shiny</li>
-               <li class="skills__list-item btn btn--plain">Data Science</li>
-               <li class="skills__list-item btn btn--plain">Data Analysis</li>
-               <li class="skills__list-item btn btn--plain">Machine Learning</li>
-               <li class="skills__list-item btn btn--plain">Statistical Modeling</li>
-               <li class="skills__list-item btn btn--plain">Data Mining</li>
-               <li class="skills__list-item btn btn--plain">Data Visualization</li>
-               <li class="skills__list-item btn btn--plain">Behavioral Science</li>
-               <li class="skills__list-item btn btn--plain">Decision Science</li>
-               <li class="skills__list-item btn btn--plain">Experimental Design</li>
-               <li class="skills__list-item btn btn--plain">Quantitative Research</li>
-               <li class="skills__list-item btn btn--plain">Problem Solving</li>
-            </ul>
+      </header>
+      <main id="main-content" role="main">
+         <!-- About section -->
+         <section id="about" class="section section--about" aria-labelledby="about-title">
+            <div class="container">
+               <div class="about">
+                  <img src="https://github.com/pmarcowski.png" 
+                     alt="Przemyslaw Marcowski" class="about__avatar">
+                  <h1 id="about-title" class="about__name">Przemyslaw Marcowski</h1>
+                  <p class="about__role">PhD Computational Scientist</p>
+                  <p class="about__bio">I specialize in data science and analytics. I use data to find answers, 
+                     solve problems, and make things more interesting. Data is a reflection of us—our biology, 
+                     behaviors, choices, and interactions. I like discovering the stories it can tell.
+                  </p>
+                  <div class="about__links">
+                     <!-- Resume button -->
+                     <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing" 
+                        target="_blank" rel="noopener noreferrer" 
+                        class="btn btn--primary" aria-label="View Resume">View Resume</a>
+                     <a href="https://github.com/pmarcowski" 
+                        target="_blank" rel="noopener noreferrer"
+                        class="btn btn--outline" aria-label="GitHub Profile">
+                     <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                     </a>
+                     <a href="https://www.linkedin.com/in/przemyslaw-marcowski/" 
+                        target="_blank" rel="noopener noreferrer"
+                        class="btn btn--outline" aria-label="LinkedIn Profile">
+                     <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                     </a>
+                     <a href="https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en" 
+                        target="_blank" rel="noopener noreferrer"
+                        class="btn btn--outline" aria-label="Google Scholar Profile">
+                     <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>
+                  </div>
+               </div>
+            </div>
          </section>
-         <!-- Projects -->
-         <section id="projects" class="section projects">
-            <h2 class="section__title">Showcase Projects</h2>
-            <div class="projects__grid">
-               <!-- Project 1 -->
-               <div class="project">
-                  <h3>Two-Armed Bandit Game with Reinforcement Learning Analysis</h3>
-                  <p class="project__description">
-                     A Two-Armed Bandit game application where players choose between two arms 
-                     offering different reward potentials. The players' choices are analyzed 
-                     using a reinforcement learning model, and the decision history 
-                     characteristics are visualized. Explores the dynamics of decision-making 
-                     and learning from experience in a reinforcement learning scenario.
-                  </p>
-                  <ul class="project__stack">
-                     <li class="project__stack-item">R</li>
-                     <li class="project__stack-item">Shiny</li>
-                     <li class="project__stack-item">Reinforcement Learning</li>
-                  </ul>
-                  <a href="https://github.com/pmarcowski/two-armed-bandit" aria-label="source code" class="link link--icon" target="_blank" rel="noopener noreferrer">
-                  <i aria-hidden="true" class="fab fa-github" alt="GitHub"></i>
-                  </a>
-                  <a href="https://pmarcowski.shinyapps.io/two-armed-bandit" aria-label="live preview" class="link link--icon" target="_blank" rel="noopener noreferrer">
-                  <i aria-hidden="true" class="fas fa-external-link-alt" alt="Live Preview"></i>
-                  </a>
+         <!-- Skills section -->
+         <section id="skills" class="section section--skills" aria-labelledby="skills-title">
+            <div class="container">
+               <h2 id="skills-title" class="section__title">Skills</h2>
+               <ul class="skills__list" aria-label="List of skills">
+                  <li class="skills__item">R</li>
+                  <li class="skills__item">Python</li>
+                  <li class="skills__item">SQL</li>
+                  <li class="skills__item">Git</li>
+                  <li class="skills__item">Shiny</li>
+                  <li class="skills__item">Data Science</li>
+                  <li class="skills__item">Data Analysis</li>
+                  <li class="skills__item">Machine Learning</li>
+                  <li class="skills__item">Statistical Modeling</li>
+                  <li class="skills__item">Data Mining</li>
+                  <li class="skills__item">Data Visualization</li>
+                  <li class="skills__item">Behavioral Science</li>
+                  <li class="skills__item">Decision Science</li>
+                  <li class="skills__item">Experimental Design</li>
+                  <li class="skills__item">Quantitative Research</li>
+                  <li class="skills__item">Problem Solving</li>
+               </ul>
+            </div>
+         </section>
+         <!-- Projects section -->
+         <section id="projects" class="section section--projects" aria-labelledby="projects-title">
+            <div class="container">
+               <h2 id="projects-title" class="section__title">Showcase Projects</h2>
+               <div class="projects__grid">
+                  <!-- Project 1 -->
+                  <div class="project-card">
+                     <h3 class="project-card__title">Two-Armed Bandit Game with Reinforcement Learning Analysis</h3>
+                     <p class="project-card__description">
+                        A Two-Armed Bandit game application where players choose between two arms 
+                        offering different reward potentials. The players' choices are analyzed 
+                        using a reinforcement learning model, and the decision history 
+                        characteristics are visualized.
+                     </p>
+                     <ul class="project-card__tags" aria-label="Technologies used">
+                        <li>R</li>
+                        <li>Shiny</li>
+                        <li>Reinforcement Learning</li>
+                     </ul>
+                     <div class="project-card__links">
+                        <a href="https://github.com/pmarcowski/two-armed-bandit" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View Two-Armed Bandit Game code on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i> View Code
+                        </a>
+                        <a href="https://pmarcowski.shinyapps.io/two-armed-bandit" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="Open live demo of Two-Armed Bandit Game">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Project 2 -->
+                  <div class="project-card">
+                     <h3 class="project-card__title">Dog Growth Prediction Model and Application</h3>
+                     <p class="project-card__description">
+                        Building a Bayesian predictive model for dog growth trajectories 
+                        based on the von Bertalanffy growth curve. The model is implemented 
+                        in a Shiny app that generates personalized growth predictions based 
+                        on user input.
+                     </p>
+                     <ul class="project-card__tags" aria-label="Technologies used">
+                        <li>R</li>
+                        <li>Shiny</li>
+                        <li>Bayesian Modeling</li>
+                     </ul>
+                     <div class="project-card__links">
+                        <a href="https://github.com/pmarcowski/doge-growth" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View Dog Growth Prediction Model code on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i> View Code
+                        </a>
+                        <a href="https://pmarcowski.shinyapps.io/doge-growth" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="Open live demo of Dog Growth Prediction Model">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Project 3 -->
+                  <div class="project-card">
+                     <h3 class="project-card__title">Simulation of Schelling's Model</h3>
+                     <p class="project-card__description">
+                        Simulating a variation of Schelling's model of segregation. 
+                        Agents of two types are randomly distributed throughout the grid. 
+                        Each agent decides if it is happy based on the types of neighboring agents. 
+                        Unhappy agents move to an empty space on the grid, simulating 
+                        the dynamics of segregation.
+                     </p>
+                     <ul class="project-card__tags" aria-label="Technologies used">
+                        <li>R</li>
+                        <li>Simulation</li>
+                        <li>Visualization</li>
+                     </ul>
+                     <div class="project-card__links">
+                        <a href="https://github.com/pmarcowski/schelling-model" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View Schelling's Model Simulation code on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i> View Code
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Project 4 -->
+                  <div class="project-card">
+                     <h3 class="project-card__title">Prisoner's Dilemma Game</h3>
+                     <p class="project-card__description">
+                        Simulation of the Iterated Prisoner's Dilemma game using various 
+                        strategies. Agents with different strategies compete in a tournament, and 
+                        the average score per move for each strategy combination is calculated. 
+                        The score distribution for each strategy is visualized.
+                     </p>
+                     <ul class="project-card__tags" aria-label="Technologies used">
+                        <li>Python</li>
+                        <li>Game Theory</li>
+                        <li>Visualization</li>
+                     </ul>
+                     <div class="project-card__links">
+                        <a href="https://github.com/pmarcowski/prisoners-dilemma" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View Prisoner's Dilemma Game code on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i> View Code
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Project 5 -->
+                  <div class="project-card">
+                     <h3 class="project-card__title">Maze Generation and Solving</h3>
+                     <p class="project-card__description">
+                        Generating random mazes using the Recursive Backtracking algorithm
+                        and solving them using a chosen path-finding algorithm. The generated
+                        mazes and their solutions are visualized, allowing for comparisons
+                        of the strengths and weaknesses of the different path finding algorithms.
+                     </p>
+                     <ul class="project-card__tags" aria-label="Technologies used">
+                        <li>Python</li>
+                        <li>Algorithms</li>
+                        <li>Visualization</li>
+                     </ul>
+                     <div class="project-card__links">
+                        <a href="https://github.com/pmarcowski/maze-solver" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View Maze Generation and Solving code on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i> View Code
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Project 6 -->
+                  <div class="project-card">
+                     <h3 class="project-card__title">Simulation of Behavior Spread in a Social Network</h3>
+                     <p class="project-card__description">
+                        Simulating the spread of behaviors within a grid-based social network. 
+                        Agents adopt behaviors based on specific probabilities determined 
+                        by their neighbors' behaviors. The dynamics of behavior spread 
+                        are calculated and visualized.
+                     </p>
+                     <ul class="project-card__tags" aria-label="Technologies used">
+                        <li>R</li>
+                        <li>Simulation</li>
+                        <li>Visualization</li>
+                     </ul>
+                     <div class="project-card__links">
+                        <a href="https://github.com/pmarcowski/behavior-propagation" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View Behavior Spread Simulation code on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i> View Code
+                        </a>
+                     </div>
+                  </div>
                </div>
-               <!-- Project 2 -->
-               <div class="project">
-                  <h3>Dog Growth Prediction Model and Application</h3>
-                  <p class="project__description">
-                     Building a Bayesian predictive model for dog growth trajectories 
-                     based on the von Bertalanffy growth curve. The model is implemented 
-                     in a Shiny app that generates personalized growth predictions based 
-                     on user input. Showcases the application of Bayesian modeling 
-                     techniques to predict biological growth patterns.
-                  </p>
-                  <ul class="project__stack">
-                     <li class="project__stack-item">R</li>
-                     <li class="project__stack-item">Shiny</li>
-                     <li class="project__stack-item">Bayesian Modeling</li>
-                  </ul>
-                  <a href="https://github.com/pmarcowski/doge-growth" aria-label="source code" class="link link--icon" target="_blank" rel="noopener noreferrer">
-                  <i aria-hidden="true" class="fab fa-github" alt="GitHub"></i>
-                  </a>
-                  <a href="https://pmarcowski.shinyapps.io/doge-growth" aria-label="live preview" class="link link--icon" target="_blank" rel="noopener noreferrer">
-                  <i aria-hidden="true" class="fas fa-external-link-alt" alt="Live Preview"></i>
-                  </a>
-               </div>
-               <!-- Project 3 -->
-               <div class="project">
-                  <h3>Simulation of Schelling's Model</h3>
-                  <p class="project__description">
-                     Simulating a variation of Schelling's model of segregation. 
-                     Agents of two types are randomly distributed throughout the grid. 
-                     Each agent decides if it is happy based on the types of neighboring agents. 
-                     Unhappy agents move to an empty space on the grid, simulating 
-                     the dynamics of segregation. Implemented on a toroidal grid 
-                     with configurable parameters and visual representation 
-                     of agent distribution and happiness over time.
-                  </p>
-                  <ul class="project__stack">
-                     <li class="project__stack-item">R</li>
-                     <li class="project__stack-item">Simulation</li>
-                     <li class="project__stack-item">Visualization</li>
-                  </ul>
-                  <a href="https://github.com/pmarcowski/schelling-model" aria-label="source code" class="link link--icon" target="_blank" rel="noopener noreferrer">
-                  <i aria-hidden="true" class="fab fa-github" alt="GitHub"></i>
-                  </a>
-               </div>
-               <!-- Project 4 -->
-               <div class="project">
-                  <h3>Prisoner's Dilemma Game</h3>
-                  <p class="project__description">
-                     Simulation of the Iterated Prisoner's Dilemma game using various 
-                     strategies. Agents with different strategies compete in a tournament, and 
-                     the average score per move for each strategy combination is calculated. 
-                     The score distribution for each strategy is visualized, providing insights 
-                     into the performance of different strategies.
-                  </p>
-                  <ul class="project__stack">
-                     <li class="project__stack-item">Python</li>
-                     <li class="project__stack-item">Game Theory</li>
-                     <li class="project__stack-item">Visualization</li>
-                  </ul>
-                  <a href="https://github.com/pmarcowski/prisoners-dilemma" aria-label="source code" class="link link--icon" target="_blank" rel="noopener noreferrer">
-                  <i aria-hidden="true" class="fab fa-github" alt="GitHub"></i>
-                  </a>
-               </div>
-               <!-- Project 5 -->
-               <div class="project">
-                  <h3>Maze Generation and Solving</h3>
-                  <p class="project__description">
-                     Generating random mazes using the Recursive Backtracking algorithm
-                     and solving them using a chosen path-finding algorithm. The generated
-                     mazes and their solutions are visualized, allowing for comparisons
-                     of the strengths and weaknesses of the different path finding algorithms.
-                  </p>
-                  <ul class="project__stack">
-                     <li class="project__stack-item">Python</li>
-                     <li class="project__stack-item">Algorithms</li>
-                     <li class="project__stack-item">Visualization</li>
-                  </ul>
-                  <a href="https://github.com/pmarcowski/maze-solver" aria-label="source code" class="link link--icon" target="_blank" rel="noopener noreferrer">
-                  <i aria-hidden="true" class="fab fa-github" alt="GitHub"></i>
-                  </a>
-               </div>
-               <!-- Project 6 -->
-               <div class="project">
-                  <h3>Simulation of Behavior Spread in a Social Network</h3>
-                  <p class="project__description">
-                     Simulating the spread of behaviors within a grid-based social network. 
-                     Agents adopt behaviors based on specific probabilities determined 
-                     by their neighbors' behaviors. The dynamics of behavior spread 
-                     are calculated and visualized, demonstrating how behaviors 
-                     propagate through social networks and the factors 
-                     influencing their adoption.
-                  </p>
-                  <ul class="project__stack">
-                     <li class="project__stack-item">R</li>
-                     <li class="project__stack-item">Simulation</li>
-                     <li class="project__stack-item">Visualization</li>
-                  </ul>
-                  <a href="https://github.com/pmarcowski/behavior-propagation" aria-label="source code" class="link link--icon" target="_blank" rel="noopener noreferrer">
-                  <i aria-hidden="true" class="fab fa-github" alt="GitHub"></i>
+               <div class="view-more">
+                  <a href="https://github.com/pmarcowski" 
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn--outline" aria-label="View more projects on GitHub">
+                  View More Projects
                   </a>
                </div>
             </div>
-            <div class="all-button-container">
-               <a href="https://github.com/pmarcowski" target="_blank" rel="noopener noreferrer" class="btn btn--outline">More Projects</a>
+         </section>
+         <!-- Publications section -->
+         <section id="publications" class="section section--publications" aria-labelledby="publications-title">
+            <div class="container">
+               <h2 id="publications-title" class="section__title">Selected Publications</h2>
+               <div class="publications__list">
+                  <!-- Publication 1 -->
+                  <div class="publication-card">
+                     <h3 class="publication-card__title">Cross-Cultural Adult ADHD Assessment in 42 Countries Using the Adult ADHD Self-Report Scale Screener</h3>
+                     <p class="publication-card__authors">Lewczuk, K., <strong>Marcowski, P.</strong>, Wizła, M., Gola, M., Nagy, L., Koós, M., Kraus, S. W., Demetrovics, Z., Potenza, M. N., Ballester-Arnal, R., Batthyány, D., Bergeron, S., Billieux, J., Briken, P., Burkauskas, J., Cárdenas-López, G., Carvalho, J., Castro-Calvo, J., Chen, L., … Bőthe, B.</p>
+                     <p class="publication-card__journal">Journal of Attention Disorders, 28(4), 512–530 (2024)</p>
+                     <a href="https://doi.org/10.1177/10870547231215518" 
+                        target="_blank" rel="noopener noreferrer"
+                        class="publication-card__link" aria-label="View publication on Cross-Cultural Adult ADHD Assessment">View Publication</a>
+                  </div>
+                  <!-- Publication 2 -->
+                  <div class="publication-card">
+                     <h3 class="publication-card__title">People conform to social norms when gambling with lives or money</h3>
+                     <p class="publication-card__authors">Jiang, Y., <strong>Marcowski, P.</strong>, Ryazanov, A., & Winkielman, P.</p>
+                     <p class="publication-card__journal">Scientific Reports, 13(1), 853 (2023)</p>
+                     <a href="https://doi.org/10.1038/s41598-023-27462-1" 
+                        target="_blank" rel="noopener noreferrer"
+                        class="publication-card__link" aria-label="View publication on social norms in gambling">View Publication</a>
+                  </div>
+                  <!-- Publication 3 -->
+                  <div class="publication-card">
+                     <h3 class="publication-card__title">Effectiveness of emotion regulation strategies measured by self-report and EMG as a result of strategy used, negative emotion strength and participants' baseline HRV</h3>
+                     <p class="publication-card__authors">Kobylińska, D., Lewczuk, K., Wizła, M., <strong>Marcowski, P.</strong>, Blaison, C., Kastendieck, T., & Hess, U.</p>
+                     <p class="publication-card__journal">Scientific Reports, 13(1), 6226 (2023)</p>
+                     <a href="https://doi.org/10.1038/s41598-023-33032-2" 
+                        target="_blank" rel="noopener noreferrer"
+                        class="publication-card__link" aria-label="View publication on effectiveness of emotion regulation strategies">View Publication</a>
+                  </div>
+                  <!-- Publication 4 -->
+                  <div class="publication-card">
+                     <h3 class="publication-card__title">Path Dependency in the Discounting of Delayed and Probabilistic Gains and Losses</h3>
+                     <p class="publication-card__authors">Białaszek, W., & <strong>Marcowski, P.</strong></p>
+                     <p class="publication-card__journal">Scientific Reports, 9(1), 8738–8738 (2019)</p>
+                     <a href="https://doi.org/10.1038/s41598-019-45376-9" 
+                        target="_blank" rel="noopener noreferrer"
+                        class="publication-card__link" aria-label="View publication on Path Dependency in Discounting">View Publication</a>
+                  </div>
+                  <!-- Publication 5 -->
+                  <div class="publication-card">
+                     <h3 class="publication-card__title">Physical and cognitive effort discounting across different reward magnitudes: Tests of discounting models</h3>
+                     <p class="publication-card__authors">Białaszek, W., <strong>Marcowski, P.</strong>, & Ostaszewski, P.</p>
+                     <p class="publication-card__journal">PLOS ONE, 12(7), e0182353–e0182353 (2017)</p>
+                     <a href="https://doi.org/10.1371/journal.pone.0182353" 
+                        target="_blank" rel="noopener noreferrer"
+                        class="publication-card__link" aria-label="View publication on effort discounting across reward magnitudes">View Publication</a>
+                  </div>
+               </div>
+               <div class="view-more">
+                  <a href="https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en" 
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn--outline" aria-label="View more publications on Google Scholar">
+                  View More Publications
+                  </a>
+               </div>
             </div>
          </section>
-         <!-- Publications -->
-         <section id="publications" class="section publications">
-            <h2 class="section__title">Selected Publications</h2>
-            <ol class="publications__list">
-               <li class="publications__list-item">
-                  Lewczuk, K., <strong>Marcowski, P.</strong>, Wizła, M., Gola, M., Nagy, L., Koós, M., Kraus, S. W., Demetrovics, Z., Potenza, M. N., Ballester-Arnal,
-                  R., Batthyány, D., Bergeron, S., Billieux, J., Briken, P., Burkauskas, J., Cárdenas-López, G., Carvalho, J., Castro-Calvo, J., Chen, L., … Bőthe, B.
-                  (2024). Cross-Cultural Adult ADHD Assessment in 42 Countries Using the Adult ADHD Self-Report Scale Screener. <em>Journal of Attention Disorders,
-                  28</em>(4), 512–530.
-                  <a href="https://doi.org/10.1177/10870547231215518" target="_blank" rel="noopener noreferrer" class="link">https://doi.org/10.1177/10870547231215518</a>
-               </li>
-               <li class="publications__list-item">
-                  Jiang, Y., <strong>Marcowski, P.</strong>, Ryazanov, A., & Winkielman, P. (2023). People conform to social norms when gambling with lives or money.
-                  <em>Scientific Reports, 13</em>(1), 853.
-                  <a href="https://doi.org/10.1038/s41598-023-27462-1" target="_blank" rel="noopener noreferrer" class="link">https://doi.org/10.1038/s41598-023-27462-1</a>
-               </li>
-               <li class="publications__list-item">
-                  Kobylińska, D., Lewczuk, K., Wizła, M., <strong>Marcowski, P.</strong>, Blaison, C., Kastendieck, T., & Hess, U. (2023). Effectiveness of
-                  emotion regulation strategies measured by self-report and EMG as a result of strategy used, negative emotion strength and participants' baseline HRV.
-                  <em>Scientific Reports, 13</em>(1), 6226.
-                  <a href="https://doi.org/10.1038/s41598-023-33032-2" target="_blank" rel="noopener noreferrer" class="link">https://doi.org/10.1038/s41598-023-33032-2</a>
-               </li>
-               <li class="publications__list-item">
-                  Białaszek, W., <strong>Marcowski, P.</strong>, & Ostaszewski, P. (2017). Physical and cognitive effort discounting across different reward magnitudes:
-                  Tests of discounting models. <em>PLOS ONE, 12</em>(7), e0182353–e0182353.
-                  <a href="https://doi.org/10.1371/journal.pone.0182353" target="_blank" rel="noopener noreferrer" class="link">https://doi.org/10.1371/journal.pone.0182353</a>
-               </li>
-            </ol>
-            <div class="all-button-container">
-               <a href="https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn--outline">More Publications</a>
+         <!-- Contact section -->
+         <section id="contact" class="section section--contact" aria-labelledby="contact-title">
+            <div class="container">
+               <h2 id="contact-title" class="section__title">Contact</h2>
+               <!-- Contact form using Formspree -->
+               <form action="https://formspree.io/f/xvoeervl" method="POST" 
+                  class="contact-form">
+                  <div class="form-group">
+                     <label for="name">Name</label>
+                     <input type="text" id="name" name="name" required aria-required="true">
+                  </div>
+                  <div class="form-group">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" name="email" required aria-required="true">
+                  </div>
+                  <div class="form-group">
+                     <label for="subject">Subject</label>
+                     <input type="text" id="subject" name="subject" required aria-required="true">
+                  </div>
+                  <div class="form-group">
+                     <label for="message">Message</label>
+                     <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                  </div>
+                  <div class="form-submit">
+                     <button type="submit" class="btn btn--primary">Send Message</button>
+                  </div>
+               </form>
             </div>
-         </section>
-         <!-- Contact -->
-         <section class="section contact center" id="contact">
-            <h2 class="section__title">Contact</h2>
-            <form action="https://formspree.io/f/xvoeervl" method="POST">
-               <input type="text" name="name" placeholder="Your name" required>
-               <input type="email" name="email" placeholder="Your email" required>
-               <input type="text" name="subject" placeholder="Subject" required>
-               <textarea name="message" placeholder="Message" rows="3" required></textarea>
-               <button type="submit" class="btn btn--outline">Send</button>
-            </form>
          </section>
       </main>
-      <footer class="footer">
-         <a href="https://przemyslawmarcowski.com" class="link footer__link">
-         Personal Website of Przemyslaw Marcowski
-         </a>
-      </footer>
-      <div class="scroll-container">
-         <div class="scroll-top">
-            <a aria-label="Scroll up" href="#top">
-            <i aria-hidden="true" class="fas fa-arrow-up" alt="Scroll Up"></i>
-            </a>
+      <!-- Footer -->
+      <footer class="footer" role="contentinfo">
+         <div class="container">
+            <p>&copy; 2024 Przemyslaw Marcowski. All rights reserved.</p>
          </div>
-      </div>
-      <script src="./script.js"></script>
+      </footer>
+      <!-- Custom JavaScript -->
+      <script src="script.js"></script>
    </body>
 </html>
