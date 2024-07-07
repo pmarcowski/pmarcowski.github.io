@@ -384,6 +384,10 @@ body {
         color: var(--color-primary);
 }
 
+.btn--sm:hover {
+        text-decoration: underline;
+}
+
 /* Footer Styles */
 .footer {
 	background-color: var(--color-bg-secondary);
@@ -422,6 +426,15 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20px;
+}
+
+.timeline-labels::after {
+    	content: 'Professional Experience';
+    	display: none;
+    	font-size: 18px;
+    	font-weight: bold;
+    	color: var(--color-primary);
+    	margin-bottom: 20px;
 }
 
 .timeline-label {
@@ -573,19 +586,20 @@ body {
 	}
 
 	.timeline-labels {
-		flex-direction: column;
-		align-items: flex-start;
+		margin: 40px;
 	}
 
+	.timeline-labels::after {
+        	display: block;
+    	}
+
 	.timeline-label {
-		width: 100%;
-		text-align: left;
-		padding: 0 0 10px 40px;
+		display: none;
 	}
 
 	.timeline-year {
 		margin-left: 0;
-		text-align: left;
+		text-align: center;
 	}
 
 	.timeline-item {
