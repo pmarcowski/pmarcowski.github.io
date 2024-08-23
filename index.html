@@ -11,9 +11,9 @@
       <meta property="og:url" content="https://przemyslawmarcowski.com/" />
       <meta property="og:type" content="website" />
       <link rel="icon" href="favicon.ico" type="image/x-icon">
-      <!-- External CSS -->
+      <!-- FontAwesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-      <!-- Custom CSS -->
+      <!-- External CSS -->
       <link rel="stylesheet" href="styles.css">
       <!-- Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-62KDXH6Q7G"></script>
@@ -35,7 +35,7 @@
            "sameAs": [
              "https://github.com/pmarcowski",
              "https://www.linkedin.com/in/przemyslaw-marcowski/",
-             "https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en"
+             "https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en"
            ]
          }
       </script>
@@ -45,7 +45,7 @@
       <header class="header" role="banner">
          <div class="container">
             <nav class="nav" role="navigation" aria-label="Main navigation">
-               <a href="#" class="nav__logo" aria-label="PM. Home">PM.</a>
+               <a href="https://przemyslawmarcowski.com/" class="nav__logo" aria-label="PM. Home">PM.</a>
                <ul class="nav__list">
                   <li><a href="#about" class="nav__link">About</a></li>
                   <li><a href="#skills" class="nav__link">Skills</a></li>
@@ -55,8 +55,7 @@
                   <li><a href="#contact" class="nav__link">Contact</a></li>
                </ul>
                <!-- Theme Toggle Button -->
-               <button id="theme-toggle" class="nav__theme-toggle" 
-                  aria-label="Toggle dark theme">
+               <button id="theme-toggle" class="nav__theme-toggle" aria-label="Toggle dark theme">
                <i class="fas fa-moon" aria-hidden="true"></i>
                </button>
                <!-- Hamburger Menu -->
@@ -80,7 +79,6 @@
                      behaviors, choices, and interactions. I like discovering the stories it can tell.
                   </p>
                   <div class="about__links">
-                     <!-- Resume Button -->
                      <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing" 
                         target="_blank" rel="noopener noreferrer" 
                         class="btn btn--primary" aria-label="View Resume">View Resume</a>
@@ -94,10 +92,11 @@
                         class="btn btn--outline" aria-label="LinkedIn Profile">
                      <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
                      </a>
-                     <a href="https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en" 
+                     <a href="https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en" 
                         target="_blank" rel="noopener noreferrer"
                         class="btn btn--outline" aria-label="Google Scholar Profile">
-                     <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a>
+                     <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
+                     </a>
                   </div>
                </div>
             </div>
@@ -139,7 +138,6 @@
                   <div class="timeline-item timeline-item--right">
                      <div class="timeline-content">
                         <h3 class="timeline-title">Data Science & Analytics Consultant</h3>
-                        <p class="timeline-company"> </p>
                         <p class="timeline-description">
                            Engineered ML transaction and revenue forecasting models for Sesame Software 
                            and designed Shiny dashboards for metric visualizations. Provided expert 
@@ -348,7 +346,7 @@
                         Generated random mazes using the Recursive Backtracking algorithm
                         and solved them using a chosen path-finding algorithm. Visualized the generated
                         mazes and their solutions, allowing for comparisons
-                        of the strengths and weaknesses of the different path finding algorithms.
+                        of the strengths and weaknesses of the different path-finding algorithms.
                      </p>
                      <ul class="project-card__tags" aria-label="Technologies used">
                         <li>Python</li>
@@ -407,7 +405,7 @@
                   </div>
                </div>
                <div class="view-more">
-                  <a href="https://scholar.google.pl/citations?user=sB2hWn0AAAAJ&hl=en" 
+                  <a href="https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en" 
                      target="_blank" rel="noopener noreferrer"
                      class="btn btn--outline" aria-label="View more publications on Google Scholar">
                   View More Publications
@@ -420,8 +418,7 @@
             <div class="container">
                <h2 id="contact-title" class="section__title">Contact</h2>
                <!-- Contact Form -->
-               <form action="https://formspree.io/f/xvoeervl" method="POST" 
-                  class="contact-form">
+               <form action="https://formspree.io/f/xvoeervl" method="POST" class="contact-form">
                   <div class="form-group">
                      <label for="name">Name</label>
                      <input type="text" id="name" name="name" required aria-required="true">
