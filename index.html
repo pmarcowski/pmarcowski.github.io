@@ -14,7 +14,7 @@
       <!-- FontAwesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
       <!-- External CSS -->
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="assets/styles.css">
       <!-- Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-62KDXH6Q7G"></script>
       <script>
@@ -106,21 +106,28 @@
             <div class="container">
                <h2 id="skills-title" class="section__title">Skills</h2>
                <ul class="skills__list" aria-label="List of skills">
+                  <!-- Programming Languages and Tools -->
                   <li class="skills__item">R</li>
                   <li class="skills__item">Python</li>
                   <li class="skills__item">SQL</li>
                   <li class="skills__item">Git</li>
                   <li class="skills__item">Shiny</li>
+                  <!-- Core Data Science Skills -->
                   <li class="skills__item">Data Science</li>
                   <li class="skills__item">Data Analysis</li>
-                  <li class="skills__item">Machine Learning</li>
                   <li class="skills__item">Statistical Modeling</li>
+                  <li class="skills__item">Machine Learning</li>
+                  <!-- Specific Data Techniques -->
                   <li class="skills__item">Data Mining</li>
                   <li class="skills__item">Data Visualization</li>
-                  <li class="skills__item">Behavioral Science</li>
-                  <li class="skills__item">Decision Science</li>
+                  <li class="skills__item">Scientific Programming</li>
+                  <!-- Research and Methodology -->
                   <li class="skills__item">Experimental Design</li>
                   <li class="skills__item">Quantitative Research</li>
+                  <!-- Domain Knowledge -->
+                  <li class="skills__item">Behavioral Science</li>
+                  <li class="skills__item">Decision Science</li>
+                  <!-- General Skills -->
                   <li class="skills__item">Problem Solving</li>
                </ul>
             </div>
@@ -220,8 +227,38 @@
             <div class="container">
                <h2 id="projects-title" class="section__title">Showcase Projects</h2>
                <div class="projects__grid">
-                  <!-- Project 1: Effort-Based Choice Modeling -->
+                  <!-- Project 1: Cross-cultural ADHD Assessment in International Sex Survey -->
                   <div class="project-card">
+                     <img src="https://raw.githubusercontent.com/pmarcowski/iss-asrs-study/main/preview.png" alt="Cross-cultural validation in the International Sex Survey (ASRS)" class="project-card__image">
+                     <h3 class="project-card__title">Cross-cultural ADHD Assessment in International Sex Survey</h3>
+                     <p class="project-card__description">
+                        Conducted cross-cultural validation of the Adult ADHD Self-Report Scale (ASRS) Screener 
+                        across 42 countries as part of the International Sex Survey (2021/2022) team. Performed 
+                        data preparation, psychometric evaluation, and cross-cultural comparisons. Analysis 
+                        included Confirmatory Factor Analysis (CFA), measurement invariance testing, reliability 
+                        analysis, and examination of group differences.
+                     </p>
+                     <ul class="project-card__tags" aria-label="Technologies used">
+                        <li>R</li>
+                        <li>Statistical Analysis</li>
+                        <li>Psychometrics</li>
+                     </ul>
+                     <div class="project-card__links">
+                        <a href="https://github.com/pmarcowski/iss-asrs-study" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View International Sex Survey (ASRS) study code on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i> View Code
+                        </a>
+                        <a href="https://doi.org/10.1177/10870547231215518" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View published paper for the International Sex Survey (ASRS) study">
+                        <i class="fas fa-book" aria-hidden="true"></i> View Publication
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Project 2: Effort-Based Choice Modeling -->
+                  <div class="project-card">
+                     <img src="https://raw.githubusercontent.com/pmarcowski/effort-choice-models/main/preview.png" alt="Effort-Based Choice Modeling" class="project-card__image">
                      <h3 class="project-card__title">Effort-Based Choice Modeling</h3>
                      <p class="project-card__description">
                         Analyzed and modeled effort-based choices in economic decision-making. 
@@ -243,8 +280,31 @@
                         </a>
                      </div>
                   </div>
-                  <!-- Project 2: Two-Armed Bandit Game -->
+                  <!-- Project 3: Model Recovery Analysis for Intertemporal Choice -->
                   <div class="project-card">
+                     <img src="https://raw.githubusercontent.com/pmarcowski/intertemporal-model-recovery/main/preview.png" alt="Model Recovery Analysis for Intertemporal Choice" class="project-card__image">
+                     <h3 class="project-card__title">Model Recovery Analysis for Intertemporal Choice</h3>
+                     <p class="project-card__description">
+                        Performed a model recovery analysis to validate the reliability of intertemporal choice models. 
+                        Compared models, simulated choice behavior using agents, and performed recovery analysis 
+                        to verify accurate recovery of true model parameters from simulated data.
+                     </p>
+                     <ul class="project-card__tags" aria-label="Technologies used">
+                        <li>R</li>
+                        <li>Simulation</li>
+                        <li>Model Validation</li>
+                     </ul>
+                     <div class="project-card__links">
+                        <a href="https://github.com/pmarcowski/intertemporal-model-recovery" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View Model Recovery Analysis code on GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i> View Code
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Project 4: Two-Armed Bandit Game -->
+                  <div class="project-card">
+                     <img src="https://raw.githubusercontent.com/pmarcowski/two-armed-bandit/main/preview.png" alt="Two-Armed Bandit Game" class="project-card__image">
                      <h3 class="project-card__title">Two-Armed Bandit Game with Reinforcement Learning Analysis</h3>
                      <p class="project-card__description">
                         Developed a Two-Armed Bandit game application where players chose between two arms 
@@ -270,50 +330,9 @@
                         </a>
                      </div>
                   </div>
-                  <!-- Project 3: Model Recovery Analysis for Intertemporal Choice -->
-                  <div class="project-card">
-                     <h3 class="project-card__title">Model Recovery Analysis for Intertemporal Choice</h3>
-                     <p class="project-card__description">
-                        Performed a model recovery analysis to validate the reliability of intertemporal choice models. 
-                        Compared models, simulated choice behavior using agents, and performed recovery analysis 
-                        to verify accurate recovery of true model parameters from simulated data.
-                     </p>
-                     <ul class="project-card__tags" aria-label="Technologies used">
-                        <li>R</li>
-                        <li>Simulation</li>
-                        <li>Model Validation</li>
-                     </ul>
-                     <div class="project-card__links">
-                        <a href="https://github.com/pmarcowski/intertemporal-model-recovery" 
-                           target="_blank" rel="noopener noreferrer"
-                           class="btn btn--sm" aria-label="View Model Recovery Analysis code on GitHub">
-                        <i class="fab fa-github" aria-hidden="true"></i> View Code
-                        </a>
-                     </div>
-                  </div>
-                  <!-- Project 4: Simulation of Behavior Spread -->
-                  <div class="project-card">
-                     <h3 class="project-card__title">Simulation of Behavior Spread in a Social Network</h3>
-                     <p class="project-card__description">
-                        Simulated the spread of behaviors within a grid-based social network. 
-                        Modeled agents' behavior adoption based on specific probabilities determined 
-                        by their neighbors' behaviors. Calculated and visualized the dynamics of behavior spread.
-                     </p>
-                     <ul class="project-card__tags" aria-label="Technologies used">
-                        <li>R</li>
-                        <li>Simulation</li>
-                        <li>Visualization</li>
-                     </ul>
-                     <div class="project-card__links">
-                        <a href="https://github.com/pmarcowski/behavior-propagation" 
-                           target="_blank" rel="noopener noreferrer"
-                           class="btn btn--sm" aria-label="View Behavior Spread Simulation code on GitHub">
-                        <i class="fab fa-github" aria-hidden="true"></i> View Code
-                        </a>
-                     </div>
-                  </div>
                   <!-- Project 5: Dog Growth Prediction Model -->
                   <div class="project-card">
+                     <img src="https://raw.githubusercontent.com/pmarcowski/doge-growth/main/preview.png" alt="Dog Growth Prediction Model and Application" class="project-card__image">
                      <h3 class="project-card__title">Dog Growth Prediction Model and Application</h3>
                      <p class="project-card__description">
                         Built a Bayesian predictive model for dog growth trajectories 
@@ -341,6 +360,7 @@
                   </div>
                   <!-- Project 6: Maze Generation and Solving -->
                   <div class="project-card">
+                     <img src="https://raw.githubusercontent.com/pmarcowski/maze-solver/main/preview.png" alt="Maze Generation and Solving" class="project-card__image">
                      <h3 class="project-card__title">Maze Generation and Solving</h3>
                      <p class="project-card__description">
                         Generated random mazes using the Recursive Backtracking algorithm
@@ -378,30 +398,51 @@
                <div class="publications__list">
                   <!-- Publication 1 -->
                   <div class="publication-card">
-                     <h3 class="publication-card__title">People conform to social norms when gambling with lives or money</h3>
-                     <p class="publication-card__authors">Jiang, Y., <strong>Marcowski, P.</strong>, Ryazanov, A., & Winkielman, P.</p>
-                     <p class="publication-card__journal">Scientific Reports, 13(1), 853 (2023)</p>
-                     <a href="https://doi.org/10.1038/s41598-023-27462-1" 
-                        target="_blank" rel="noopener noreferrer"
-                        class="publication-card__link" aria-label="View publication on social norms in gambling">View Publication</a>
+                     <div class="publication-card__image">
+                        <img src="assets/images/2023_scientificReports_moralChoice.png" alt="People conform to social norms when gambling with lives or money">
+                     </div>
+                     <div class="publication-card__content">
+                        <h3 class="publication-card__title">People conform to social norms when gambling with lives or money</h3>
+                        <p class="publication-card__authors">Jiang, Y., <strong>Marcowski, P.</strong>, Ryazanov, A., & Winkielman, P.</p>
+                        <p class="publication-card__journal">Scientific Reports, 13(1), 853 (2023)</p>
+                        <a href="https://doi.org/10.1038/s41598-023-27462-1" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View publication on social norms in gambling">
+                        <i class="fas fa-book" aria-hidden="true"></i> View Publication
+                        </a>
+                     </div>
                   </div>
                   <!-- Publication 2 -->
                   <div class="publication-card">
-                     <h3 class="publication-card__title">Effectiveness of emotion regulation strategies measured by self-report and EMG as a result of strategy used, negative emotion strength and participants' baseline HRV</h3>
-                     <p class="publication-card__authors">Kobylińska, D., Lewczuk, K., Wizła, M., <strong>Marcowski, P.</strong>, Blaison, C., Kastendieck, T., & Hess, U.</p>
-                     <p class="publication-card__journal">Scientific Reports, 13(1), 6226 (2023)</p>
-                     <a href="https://doi.org/10.1038/s41598-023-33032-2" 
-                        target="_blank" rel="noopener noreferrer"
-                        class="publication-card__link" aria-label="View publication on effectiveness of emotion regulation strategies">View Publication</a>
+                     <div class="publication-card__image">
+                        <img src="assets/images/2023_scientificReports_emotionEMG.png" alt="Effectiveness of emotion regulation strategies measured by self-report and EMG">
+                     </div>
+                     <div class="publication-card__content">
+                        <h3 class="publication-card__title">Effectiveness of emotion regulation strategies measured by self-report and EMG as a result of strategy used, negative emotion strength and participants' baseline HRV</h3>
+                        <p class="publication-card__authors">Kobylińska, D., Lewczuk, K., Wizła, M., <strong>Marcowski, P.</strong>, Blaison, C., Kastendieck, T., & Hess, U.</p>
+                        <p class="publication-card__journal">Scientific Reports, 13(1), 6226 (2023)</p>
+                        <a href="https://doi.org/10.1038/s41598-023-33032-2" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View publication on effectiveness of emotion regulation strategies">
+                        <i class="fas fa-book" aria-hidden="true"></i> View Publication
+                        </a>
+                     </div>
                   </div>
                   <!-- Publication 3 -->
                   <div class="publication-card">
-                     <h3 class="publication-card__title">Path Dependency in the Discounting of Delayed and Probabilistic Gains and Losses</h3>
-                     <p class="publication-card__authors">Białaszek, W., & <strong>Marcowski, P.</strong></p>
-                     <p class="publication-card__journal">Scientific Reports, 9(1), 8738–8738 (2019)</p>
-                     <a href="https://doi.org/10.1038/s41598-019-45376-9" 
-                        target="_blank" rel="noopener noreferrer"
-                        class="publication-card__link" aria-label="View publication on Path Dependency in Discounting">View Publication</a>
+                     <div class="publication-card__image">
+                        <img src="assets/images/2023_scientificReports_pathDependency.png" alt="Path Dependency in the Discounting of Delayed and Probabilistic Gains and Losses">
+                     </div>
+                     <div class="publication-card__content">
+                        <h3 class="publication-card__title">Path Dependency in the Discounting of Delayed and Probabilistic Gains and Losses</h3>
+                        <p class="publication-card__authors">Białaszek, W., & <strong>Marcowski, P.</strong></p>
+                        <p class="publication-card__journal">Scientific Reports, 9(1), 8738–8738 (2019)</p>
+                        <a href="https://doi.org/10.1038/s41598-019-45376-9" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn btn--sm" aria-label="View publication on Path Dependency in Discounting">
+                        <i class="fas fa-book" aria-hidden="true"></i> View Publication
+                        </a>
+                     </div>
                   </div>
                </div>
                <div class="view-more">
@@ -449,6 +490,6 @@
          </div>
       </footer>
       <!-- Custom JavaScript -->
-      <script src="script.js"></script>
+      <script src="assets/script.js"></script>
    </body>
 </html>
