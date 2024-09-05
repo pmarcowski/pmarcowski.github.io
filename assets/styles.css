@@ -8,7 +8,9 @@
     --color-secondary: #586069;
     --color-border: #e1e4e8;
     --color-bg-secondary: #f6f8fa;
-    --color-bg-tertiary: #fafbfc;
+    --color-bg-secondary-hover: #e1e4e8;
+    --color-bg-tertiary: #f1f3f5;
+    --color-bg-tertiary-hover: #d0d7de;
     --color-accent: #28a745;
     --color-danger: #d73a49;
 
@@ -46,7 +48,9 @@
     --color-secondary: #8b949e;
     --color-border: #30363d;
     --color-bg-secondary: #161b22;
+    --color-bg-secondary-hover: #21262d;
     --color-bg-tertiary: #1c2128;
+    --color-bg-tertiary-hover: #2c333c;
     --color-accent: #3fb950;
     --color-danger: #f85149;
 }
@@ -70,7 +74,7 @@ body {
     line-height: var(--line-height-base);
     color: var(--color-text);
     background-color: var(--color-bg);
-    transition: var(--transition);
+    transition: background-color var(--transition), color var(--transition);
 }
 
 .container {
@@ -89,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: var(--color-primary);
     text-decoration: none;
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 a:hover {
@@ -135,7 +139,7 @@ a:hover {
     color: var(--color-text);
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--border-radius-md);
-    transition: var(--transition);
+    transition: background-color var(--transition), color var(--transition);
 }
 
 .nav__link:hover {
@@ -151,7 +155,7 @@ a:hover {
     cursor: pointer;
     font-size: var(--font-size-lg);
     padding: var(--spacing-sm);
-    transition: var(--transition);
+    transition: color var(--transition);
 }
 
 .nav__theme-toggle:hover,
@@ -238,13 +242,12 @@ a:hover {
     border-radius: 20px;
     padding: var(--spacing-sm) var(--spacing-md);
     font-size: var(--font-size-sm);
-    transition: var(--transition);
+    transition: background-color var(--transition), color var(--transition);
 }
 
 .skills__item:hover {
     background-color: var(--color-primary);
     color: var(--color-bg);
-    transform: translateY(-3px);
 }
 
 /* Projects Section Styles */
@@ -271,12 +274,12 @@ a:hover {
     height: 100%;
     display: flex;
     flex-direction: column;
-    transition: var(--transition);
+    transition: background-color var(--transition);
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    background-color: var(--color-bg-secondary-hover);
+    border-color: var(--color-bg-secondary-hover);
 }
 
 .project-card__title {
@@ -307,7 +310,13 @@ a:hover {
     border-radius: 20px;
     padding: var(--spacing-xs) var(--spacing-sm);
     font-size: var(--font-size-sm);
-    transition: var(--transition);
+    color: var(--color-text);
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.project-card:hover .project-card__tags li {
+    background-color: var(--color-bg-tertiary-hover);
+    border-color: var(--color-bg-tertiary-hover);
 }
 
 .project-card__links {
@@ -329,12 +338,12 @@ a:hover {
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-md);
-    transition: var(--transition);
+    transition: background-color var(--transition);
 }
 
 .publication-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    background-color: var(--color-bg-secondary-hover);
+    border-color: var(--color-bg-secondary-hover);
 }
 
 .publication-card__image {
@@ -402,7 +411,7 @@ a:hover {
     border-radius: var(--border-radius-sm);
     background-color: var(--color-bg);
     color: var(--color-text);
-    transition: var(--transition);
+    transition: border-color var(--transition);
 }
 
 .form-group input:hover,
@@ -423,7 +432,7 @@ a:hover {
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    transition: all var(--transition);
+    transition: background-color var(--transition), color var(--transition), border-color var(--transition);
 }
 
 .btn--primary {
@@ -455,7 +464,7 @@ a:hover {
     font-size: var(--font-size-sm);
     color: var(--color-primary);
     font-weight: 600;
-    transition: var(--transition);
+    transition: color var(--transition);
     text-decoration: none;
 }
 
@@ -481,149 +490,6 @@ a:hover {
 .view-more {
     text-align: center;
     margin-top: var(--spacing-xl);
-}
-
-/* Career Timeline Section Styles */
-.career-timeline {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: var(--spacing-xl) 0;
-}
-
-.career-timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background: var(--color-border);
-    transform: translateX(-50%);
-}
-
-.timeline-labels {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-md);
-}
-
-.timeline-labels::after {
-    content: 'Professional Experience';
-    display: none;
-    font-size: var(--font-size-lg);
-    font-weight: bold;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
-}
-
-.timeline-label {
-    font-size: var(--font-size-lg);
-    font-weight: bold;
-    color: var(--color-primary);
-    width: 50%;
-}
-
-.timeline-label--left {
-    text-align: right;
-    padding-right: var(--spacing-md);
-}
-
-.timeline-label--right {
-    text-align: left;
-    padding-left: var(--spacing-md);
-}
-
-.timeline-year {
-    position: relative;
-    width: 60px;
-    margin: var(--spacing-lg) auto;
-    padding: var(--spacing-xs) 0;
-    text-align: center;
-    background: var(--color-primary);
-    color: var(--color-bg);
-    border-radius: var(--border-radius-sm);
-    font-weight: bold;
-    font-size: var(--font-size-sm);
-    z-index: 1;
-}
-
-.timeline-item {
-    position: relative;
-    width: 50%;
-    margin-bottom: var(--spacing-lg);
-}
-
-.timeline-item--left {
-    left: 0;
-    padding-right: var(--spacing-lg);
-}
-
-.timeline-item--right {
-    left: 50%;
-    padding-left: var(--spacing-lg);
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
-    background: var(--color-primary);
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-item--left::before {
-    right: -6px;
-}
-
-.timeline-item--right::before {
-    left: -6px;
-}
-
-.timeline-content {
-    background: var(--color-bg-secondary);
-    padding: var(--spacing-md);
-    border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-}
-
-.timeline-content:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.timeline-title {
-    font-size: var(--font-size-base);
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-xs);
-}
-
-.timeline-company {
-    font-weight: bold;
-    margin-bottom: var(--spacing-xs);
-    color: var(--color-secondary);
-    font-size: var(--font-size-sm);
-}
-
-.timeline-description {
-    font-size: var(--font-size-sm);
-    line-height: var(--line-height-base);
-    color: var(--color-text);
-}
-
-/* Adjustments for Project Cards */
-.project-card__links .btn--sm {
-    margin-right: var(--spacing-sm);
-}
-
-/* Adjustments for Publication Cards */
-.publication-card__content .btn--sm {
-    margin-top: auto;
 }
 
 /* Responsive Design Styles */
@@ -672,50 +538,6 @@ a:hover {
 
     .projects__grid {
         grid-template-columns: 1fr;
-    }
-
-    .career-timeline::before {
-        left: 20px;
-    }
-
-    .timeline-labels {
-        margin: var(--spacing-xl) 0;
-    }
-
-    .timeline-labels::after {
-        display: block;
-        margin-left: 40px;
-        text-align: left;
-    }
-
-    .timeline-label {
-        display: none;
-    }
-
-    .timeline-year {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 2px 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: var(--spacing-xl);
-        padding-right: 0;
-    }
-
-    .timeline-item--right {
-        left: 0;
-    }
-
-    .timeline-item::before {
-        left: 14px;
-    }
-
-    .timeline-item--left::before {
-        right: auto;
-        left: 14px;
     }
 
     .contact-form {
