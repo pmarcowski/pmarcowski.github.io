@@ -174,12 +174,13 @@ a:hover {
    Section Components
    ========================================================================== */
 
-.section {
-  min-height: 100vh;
+   .section {
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: calc(75px + var(--spacing-lg)) 0;
-}
+    padding: calc(75px + var(--spacing-xl)) 0;
+    transition: padding var(--transition);
+  }
 
 .section__title {
   font-size: var(--font-size-xxl);
