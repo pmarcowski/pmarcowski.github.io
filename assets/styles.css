@@ -353,7 +353,7 @@ a:hover {
   border-radius: 20px;
   padding: var(--spacing-xs) var(--spacing-sm);
   font-size: var(--font-size-sm);
-  color: var (--color-text);
+  color: var(--color-text);
   transition: background-color var(--transition), color var(--transition);
 }
 
@@ -363,18 +363,16 @@ a:hover {
 
 .project-card__links {
   display: flex;
-  gap: var (--spacing-md);
+  gap: var(--spacing-md);
 }
 
-.projects__column-title {
+.projects__column-title,
+.skills__column h3 {
   font-size: var(--font-size-lg);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   margin-bottom: var(--spacing-lg);
   text-align: center;
-}
-
-.projects__grid .projects__column-title {
-  margin-bottom: var(--spacing-sm);
+  font-weight: 400;
 }
 
 /* ==========================================================================
@@ -491,7 +489,7 @@ a:hover {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color var(--transition), color var (--transition), border-color var(--transition);
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
 }
 
 .btn--primary {
