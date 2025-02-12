@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <!-- Meta tags -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Przemyslaw Marcowski</title>
       <meta name="description" content="Personal website of Przemyslaw Marcowski, a PhD quantitative researcher specializing in data science and analytics.">
       <meta name="keywords" content="Przemyslaw Marcowski, PhD, quantitative researcher, data science, data analytics, decision science, personal website">
+      <!-- Open Graph -->
       <meta property="og:title" content="Przemyslaw Marcowski" />
       <meta property="og:description" content="Personal website of Przemyslaw Marcowski, a PhD quantitative researcher specializing in data science and analytics." />
       <meta property="og:url" content="https://przemyslawmarcowski.com/" />
       <meta property="og:type" content="website" />
+      <!-- Assets -->
       <link rel="icon" href="favicon.ico" type="image/x-icon">
-      <!-- FontAwesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-      <!-- External CSS -->
       <link rel="stylesheet" href="assets/styles.css">
       <!-- Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-62KDXH6Q7G"></script>
@@ -23,6 +24,7 @@
          gtag('js', new Date());
          gtag('config', 'G-62KDXH6Q7G');
       </script>
+      <!-- Schema.org -->
       <script type="application/ld+json">
          {
            "@context": "https://schema.org",
@@ -41,7 +43,7 @@
       </script>
    </head>
    <body class="light-theme">
-      <!-- Header with Navigation -->
+      <!-- Header -->
       <header class="header" role="banner">
          <div class="container">
             <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -49,34 +51,29 @@
                <ul class="nav__list">
                   <li><a href="#about" class="nav__link">About</a></li>
                   <li><a href="#skills" class="nav__link">Skills</a></li>
-                  <!-- <li><a href="#career" class="nav__link">Career</a></li> -->
                   <li><a href="#projects" class="nav__link">Projects</a></li>
                   <li><a href="#publications" class="nav__link">Publications</a></li>
                   <li><a href="#contact" class="nav__link">Contact</a></li>
                </ul>
-               <!-- Theme Toggle Button -->
                <button id="theme-toggle" class="nav__theme-toggle" aria-label="Toggle dark theme">
                <i class="fas fa-moon" aria-hidden="true"></i>
                </button>
-               <!-- Hamburger Menu -->
                <button class="nav__hamburger" aria-label="Toggle menu">
                <i class="fas fa-bars" aria-hidden="true"></i>
                </button>
             </nav>
          </div>
       </header>
+      <!-- Main Content -->
       <main id="main-content" role="main">
          <!-- About Section -->
          <section id="about" class="section section--about" aria-labelledby="about-title">
             <div class="container">
                <div class="about">
-                  <img src="https://github.com/pmarcowski.png"
-                     alt="Przemyslaw Marcowski" class="about__avatar">
+                  <img src="https://github.com/pmarcowski.png" alt="Przemyslaw Marcowski" class="about__avatar">
                   <h1 id="about-title" class="about__name">Przemyslaw Marcowski</h1>
                   <p class="about__role">PhD Quantitative Researcher</p>
-                  <p class="about__bio">I use data to find answers,
-                     solve problems, and make things more interesting.
-                  </p>
+                  <p class="about__bio">I use data to find answers, solve problems, and make things more interesting.</p>
                   <div class="about__links">
                      <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing"
                         target="_blank" rel="noopener noreferrer"
@@ -105,7 +102,7 @@
             <div class="container">
                <h2 id="skills-title" class="section__title">Skills</h2>
                <div class="skill-cloud">
-                  <!-- Data Science & ML -->
+                  <!-- Data Science Skills -->
                   <div class="skill-cloud__category">
                      <h3 class="skill-cloud__title">Data Science & Machine Learning</h3>
                      <div class="skill-cloud__tags">
@@ -117,18 +114,18 @@
                         <span class="skill-tag skill-tag--ds">Scientific Computing & Simulation</span>
                      </div>
                   </div>
-                  <!-- Data Analysis -->
+                  <!-- Data Analysis Skills -->
                   <div class="skill-cloud__category">
                      <h3 class="skill-cloud__title">Data Analysis & Insights</h3>
                      <div class="skill-cloud__tags">
                         <span class="skill-tag skill-tag--da">Quantitative Research & Analysis</span>
-			<span class="skill-tag skill-tag--da">Solutions Design & Implementation</span>
-			<span class="skill-tag skill-tag--da">Decision Science</span>
+                        <span class="skill-tag skill-tag--da">Solutions Design & Implementation</span>
+                        <span class="skill-tag skill-tag--da">Decision Science</span>
                         <span class="skill-tag skill-tag--da">Data Visualization & Storytelling</span>
                         <span class="skill-tag skill-tag--da">Data Wrangling & Transformation</span>
                      </div>
                   </div>
-                  <!-- Programming & Tools -->
+                  <!-- Programming Skills -->
                   <div class="skill-cloud__category">
                      <h3 class="skill-cloud__title">Programming & Tools</h3>
                      <div class="skill-cloud__tags">
@@ -147,19 +144,21 @@
             <div class="container">
                <h2 id="projects-title" class="section__title">Showcase Projects</h2>
                <div class="projects__grid">
+                  <!-- Current Project -->
                   <div class="projects__column">
-                     <h3 class="skill-cloud__title">Working On</h3>
-                     <!-- Working On: 1 -->
-                     <div class="project-card">
-                        <img src="https://raw.githubusercontent.com/pmarcowski/dcelab/main/preview.png" alt="Discrete Choice Experiments Lab" class="project-card__image">
+                     <h3 class="project-section__title">Working On</h3>
+                     <div class="project-card project-card--dev">
+                        <img src="https://raw.githubusercontent.com/pmarcowski/dcelab/main/preview.png" 
+                           alt="Discrete Choice Experiments Lab" 
+                           class="project-card__image">
                         <h3 class="project-card__title">Discrete Choice Experiments (DCE) with Shiny</h3>
                         <p class="project-card__description">
                            Flexible system for building discrete choice experiments using R Shiny, with tools for efficient design generation and analysis. Features deployment for both local and web environments, with automated cloud data storage.
                         </p>
                         <ul class="project-card__tags" aria-label="Technologies used">
-                           <li>R</li>
-                           <li>Shiny</li>
-                           <li>Data Collection</li>
+                           <li class="project-tag project-tag--dev">R</li>
+                           <li class="project-tag project-tag--dev">Shiny</li>
+                           <li class="project-tag project-tag--da">Data Collection</li>
                         </ul>
                         <div class="project-card__links">
                            <a href="https://github.com/pmarcowski/dcelab"
@@ -175,19 +174,21 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Recent Project -->
                   <div class="projects__column">
-                     <h3 class="project-section__title">Working On</h3>
-                     <!-- Last Project -->
-                     <div class="project-card">
-                        <img src="https://raw.githubusercontent.com/pmarcowski/effort-choice-models/main/preview.png" alt="Effort-Based Choice Modeling" class="project-card__image">
+                     <h3 class="project-section__title">Recent Project</h3>
+                     <div class="project-card project-card--da">
+                        <img src="https://raw.githubusercontent.com/pmarcowski/effort-choice-models/main/preview.png" 
+                           alt="Effort-Based Choice Modeling" 
+                           class="project-card__image">
                         <h3 class="project-card__title">Predicting Behavior in Effort-Based Choice</h3>
                         <p class="project-card__description">
                            Research framework analyzing effort-based economic decisions, implementing computational models to evaluate how effort influences outcome valuation. Includes tools for model comparison, parameter estimation, agent-based simulation, and statistical analysis.
                         </p>
                         <ul class="project-card__tags" aria-label="Technologies used">
-                           <li>R</li>
-                           <li>Behavioral Economics</li>
-                           <li>Statistical Modeling</li>
+                           <li class="project-tag project-tag--dev">R</li>
+                           <li class="project-tag project-tag--da">Behavioral Economics</li>
+                           <li class="project-tag project-tag--ds">Statistical Modeling</li>
                         </ul>
                         <div class="project-card__links">
                            <a href="https://github.com/pmarcowski/effort-choice-models"
@@ -218,8 +219,7 @@
             <div class="container">
                <h2 id="publications-title" class="section__title">Last Publication</h2>
                <div class="publications__list">
-                  <!-- Publication -->
-                  <div class="publication-card">
+                  <div class="publication-card publication-card--da">
                      <div class="publication-card__image">
                         <img src="assets/images/2023_scientificReports_moralChoice.png" alt="People conform to social norms when gambling with lives or money">
                      </div>
@@ -248,7 +248,6 @@
          <section id="contact" class="section section--contact" aria-labelledby="contact-title">
             <div class="container">
                <h2 id="contact-title" class="section__title">Contact</h2>
-               <!-- Contact Form -->
                <form action="https://formspree.io/f/xvoeervl" method="POST" class="contact-form">
                   <div class="form-group">
                      <label for="name">Name</label>
@@ -279,7 +278,7 @@
             <p>&copy; 2024 Przemyslaw Marcowski. All rights reserved.</p>
          </div>
       </footer>
-      <!-- Custom JavaScript -->
+      <!-- Scripts -->
       <script src="assets/script.js"></script>
    </body>
 </html>
