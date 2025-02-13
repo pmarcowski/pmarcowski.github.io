@@ -97,6 +97,7 @@
 html {
   font-size: var(--font-size-base);
   scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
 body {
