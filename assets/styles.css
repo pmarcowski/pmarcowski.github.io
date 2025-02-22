@@ -293,12 +293,15 @@ a:hover {
   font-size: var(--font-size-lg);
   color: var(--color-primary);
   margin-bottom: var(--spacing-md);
+  text-align: center;
 }
 
 .skill-cloud__tags {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
+  justify-content: center;
+  text-align: center;
 }
 
 .skill-tag {
