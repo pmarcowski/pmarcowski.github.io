@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="2; url=https://dual-power-model.onrender.com/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Power Model</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
+      html, body {
+        height: 100%;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      }
+      .center {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin: 0;
+        height: 100%;
         text-align: center;
-        color: #333;
+      }
+      button {
+        margin: 5px 0;
+        padding: 8px 16px;
+        width: 200px;
+      }
+      #startup-message {
+        margin-top: 10px;
+        visibility: hidden;
+        height: 1.2em;
       }
     </style>
   </head>
   <body>
-    <div>
-      <p>Please allow up to 30 seconds for startup...</p>
+    <div class="center">
+      <h2>Dual Power Model</h2>
+      <button onclick="location.href='https://dual-power-model.onrender.com/'" id="model-btn">Model Visualizer</button>
+      <button onclick="location.href='video.html'">Model Simulation</button>
+      <p id="startup-message">Please allow up to 30 seconds for startup...</p>
     </div>
+
+    <script>
+      document.getElementById('model-btn').addEventListener('click', function() {
+        document.getElementById('startup-message').style.visibility = 'visible';
+      });
+    </script>
   </body>
 </html>
