@@ -209,7 +209,7 @@ a:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: calc(75px + var(--spacing-xl)) 0;
+  padding: calc(75px + var(--spacing-lg)) 0;
   transition: padding var(--transition);
 }
 
@@ -270,6 +270,36 @@ a:hover {
   gap: var(--spacing-md);
 }
 
+/* Scroll indicator for about section */
+.about__scroll-indicator {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+}
+
+.scroll-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color var(--transition);
+}
+
+.scroll-arrow:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.about__scroll-indicator i {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  transition: color var(--transition);
+}
+
+.scroll-arrow:hover i {
+  color: var(--color-primary-hover);
+}
+
 /* ==========================================================================
    Skills Section
    ========================================================================== */
@@ -287,6 +317,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
 }
 
 .skill-cloud__title {
@@ -365,13 +396,14 @@ a:hover {
 .project-card {
   background-color: var(--color-bg-secondary);
   border-radius: var(--border-radius-lg);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl);
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: background-color var(--transition);
+  transition: background-color var(--transition), box-shadow var(--transition), transform var(--transition);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .project-card::before {
@@ -391,6 +423,8 @@ a:hover {
 
 .project-card:hover {
   background-color: var(--color-bg-secondary-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .project-card:hover::before {
@@ -414,7 +448,7 @@ a:hover {
 .project-card__description {
   color: var(--color-text);
   font-size: var(--font-size-sm);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
   line-height: var(--line-height-base);
   flex-grow: 1;
 }
@@ -469,10 +503,11 @@ a:hover {
   display: flex;
   background-color: var(--color-bg-secondary);
   border-radius: var(--border-radius-lg);
-  padding: var(--spacing-element);
-  transition: background-color var(--transition);
+  padding: var(--spacing-xl);
+  transition: background-color var(--transition), box-shadow var(--transition), transform var(--transition);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .publication-card::before {
@@ -492,6 +527,8 @@ a:hover {
 
 .publication-card:hover {
   background-color: var(--color-bg-secondary-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .publication-card:hover::before {
@@ -518,7 +555,7 @@ a:hover {
 
 .publication-card__title {
   font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
   color: var(--color-primary);
 }
 
@@ -544,10 +581,11 @@ a:hover {
   padding: var(--spacing-element);
   background-color: var(--color-bg-secondary);
   border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
 }
 
 .form-group {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
 }
 
 .form-group label {
@@ -717,6 +755,10 @@ a:hover {
     height: 200px;
     margin-right: 0;
     margin-bottom: var(--spacing-md);
+  }
+
+  .project-card, .publication-card {
+    padding: var(--spacing-lg);
   }
 
   .contact-form {
