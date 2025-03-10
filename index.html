@@ -1,289 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <!-- Meta tags -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Przemyslaw Marcowski</title>
-      <meta name="description" content="Personal website of Przemyslaw Marcowski, a PhD quantitative scientist specializing in data science and analytics.">
-      <meta name="keywords" content="Przemyslaw Marcowski, PhD, quantitative scientist, data science, data analytics, decision science, personal website">
-      <!-- Open Graph -->
-      <meta property="og:title" content="Przemyslaw Marcowski" />
-      <meta property="og:description" content="Personal website of Przemyslaw Marcowski, a PhD quantitative scientist specializing in data science and analytics." />
-      <meta property="og:url" content="https://przemyslawmarcowski.com/" />
-      <meta property="og:type" content="website" />
-      <!-- Assets -->
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-      <link rel="stylesheet" href="assets/styles.css">
-      <!-- Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-62KDXH6Q7G"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         gtag('config', 'G-62KDXH6Q7G');
-      </script>
-      <!-- Schema.org -->
-      <script type="application/ld+json">
-         {
-           "@context": "https://schema.org",
-           "@type": "Person",
-           "name": "Przemyslaw Marcowski",
-           "alternateName": ["Przemek Marcowski", "Przemysław Marcowski"],
-           "jobTitle": "PhD quantitative scientist",
-           "url": "https://przemyslawmarcowski.com/",
-           "description": "PhD quantitative scientist specializing in data science and analytics",
-           "sameAs": [
-             "https://github.com/pmarcowski",
-             "https://www.linkedin.com/in/przemyslaw-marcowski/",
-             "https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en"
-           ]
-         }
-      </script>
-   </head>
-   <body class="light-theme">
-      <!-- Header -->
-      <header class="header" role="banner">
-         <div class="container">
-            <nav class="nav" role="navigation" aria-label="Main navigation">
-               <a href="https://przemyslawmarcowski.com/" class="nav__logo" aria-label="PM. Home">PM.</a>
-               <ul class="nav__list">
-                  <li><a href="#about" class="nav__link">About</a></li>
-                  <li><a href="#skills" class="nav__link">Skills</a></li>
-                  <li><a href="#projects" class="nav__link">Projects</a></li>
-                  <li><a href="#publications" class="nav__link">Publications</a></li>
-                  <li><a href="#contact" class="nav__link">Contact</a></li>
-               </ul>
-               <button id="theme-toggle" class="nav__theme-toggle" aria-label="Toggle dark theme">
-               <i class="fas fa-moon" aria-hidden="true"></i>
-               </button>
-               <button class="nav__hamburger" aria-label="Toggle menu">
-               <i class="fas fa-bars" aria-hidden="true"></i>
-               </button>
-            </nav>
-         </div>
-      </header>
-      <!-- Main Content -->
-      <main id="main-content" role="main">
-         <!-- About Section -->
-         <section id="about" class="section section--about" aria-labelledby="about-title">
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przemyslaw Marcowski</title>
+    
+    <!-- Meta Tags and SEO -->
+    <meta name="description" content="Personal website of Przemyslaw Marcowski, a quantitative scientist specializing in data science and analytics.">
+    <meta name="keywords" content="Przemyslaw Marcowski, quantitative scientist, data science, data analytics, decision science, personal website">
+    
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Przemyslaw Marcowski" />
+    <meta property="og:description" content="Personal website of Przemyslaw Marcowski, a quantitative scientist specializing in data science and analytics." />
+    <meta property="og:url" content="https://przemyslawmarcowski.com/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- FontAwesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-62KDXH6Q7G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-62KDXH6Q7G');
+    </script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Przemyslaw Marcowski",
+      "alternateName": ["Przemek Marcowski", "Przemysław Marcowski"],
+      "jobTitle": "Quantitative Scientist",
+      "url": "https://przemyslawmarcowski.com/",
+      "description": "Quantitative scientist specializing in data science and analytics",
+      "sameAs": [
+        "https://github.com/pmarcowski",
+        "https://www.linkedin.com/in/przemyslaw-marcowski/",
+        "https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header with Theme Toggle -->
+    <header class="header" role="banner">
+        <span class="logo-placeholder"></span>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i id="theme-icon" class="theme-icon fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Landing Page -->
+        <div id="landing" class="page">
             <div class="container">
-               <div class="about">
-                  <img src="https://github.com/pmarcowski.png" alt="Przemyslaw Marcowski" class="about__avatar">
-                  <h1 id="about-title" class="about__name">Przemyslaw Marcowski</h1>
-                  <p class="about__role">PhD Quantitative Scientist</p>
-                  <p class="about__bio">I use data to find answers, solve problems, and make things more interesting.</p>
-                  <div class="about__links">
-                     <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing"
-                        target="_blank" rel="noopener noreferrer"
-                        class="btn btn--primary" aria-label="View Resume">View Resume</a>
-                     <a href="https://github.com/pmarcowski"
-                        target="_blank" rel="noopener noreferrer"
-                        class="btn btn--outline" aria-label="GitHub Profile">
-                     <i class="fab fa-github" aria-hidden="true"></i> GitHub
-                     </a>
-                     <a href="https://www.linkedin.com/in/przemyslaw-marcowski/"
-                        target="_blank" rel="noopener noreferrer"
-                        class="btn btn--outline" aria-label="LinkedIn Profile">
-                     <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
-                     </a>
-                     <a href="https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en"
-                        target="_blank" rel="noopener noreferrer"
-                        class="btn btn--outline" aria-label="Google Scholar Profile">
-                     <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
-                     </a>
-                  </div>
-                  <div class="about__scroll-indicator">
-                     <a href="#skills" class="scroll-arrow" aria-label="Scroll to Skills section">
-                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                     </a>
-                  </div>
-               </div>
+                <h1 class="name">Przemyslaw Marcowski</h1>
+                <div class="title">Quantitative Scientist</div>
+                <p class="tagline">I use data to find answers, solve problems, and make things more interesting.</p>
+                <div class="buttons">
+                    <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing" class="btn" aria-label="Download Resume"><i class="fa-solid fa-file-lines me-2" aria-hidden="true"></i> Resume</a>
+                    <a href="https://github.com/pmarcowski" class="btn" aria-label="Visit GitHub Profile"><i class="fa-brands fa-github me-2" aria-hidden="true"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/przemyslaw-marcowski/" class="btn" aria-label="Visit LinkedIn Profile"><i class="fa-brands fa-linkedin me-2" aria-hidden="true"></i> LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en" class="btn" aria-label="Visit Google Scholar Profile"><i class="fa-solid fa-graduation-cap me-2" aria-hidden="true"></i> Scholar</a>
+                </div>
             </div>
-         </section>
-         <!-- Skills Section -->
-         <section id="skills" class="section section--skills" aria-labelledby="skills-title">
+            <a href="#content" class="scroll-down" aria-label="Scroll to content section"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+        
+        <!-- Content Page -->
+        <div id="content" class="page">
             <div class="container">
-               <h2 id="skills-title" class="section__title">Skills</h2>
-               <div class="skill-cloud">
-                  <!-- Data Science Skills -->
-                  <div class="skill-cloud__category">
-                     <h3 class="skill-cloud__title">Data Science & Machine Learning</h3>
-                     <div class="skill-cloud__tags">
-                        <span class="skill-tag skill-tag--ds">Advanced Statistical Modeling</span>
-                        <span class="skill-tag skill-tag--ds">Predictive Modeling</span>
-                        <span class="skill-tag skill-tag--ds">Time Series Analysis & Forecasting</span>
-                        <span class="skill-tag skill-tag--ds">Experimental Design & Causal Inference</span>
-                        <span class="skill-tag skill-tag--ds">Model Optimization & Validation</span>
-                        <span class="skill-tag skill-tag--ds">Scientific Computing & Simulation</span>
-                     </div>
-                  </div>
-                  <!-- Data Analysis Skills -->
-                  <div class="skill-cloud__category">
-                     <h3 class="skill-cloud__title">Data Analysis & Insights</h3>
-                     <div class="skill-cloud__tags">
-                        <span class="skill-tag skill-tag--da">Quantitative Research & Analysis</span>
-                        <span class="skill-tag skill-tag--da">Solutions Design & Implementation</span>
-                        <span class="skill-tag skill-tag--da">Decision Science</span>
-                        <span class="skill-tag skill-tag--da">Data Visualization & Storytelling</span>
-                        <span class="skill-tag skill-tag--da">Data Wrangling & Transformation</span>
-                     </div>
-                  </div>
-                  <!-- Programming Skills -->
-                  <div class="skill-cloud__category">
-                     <h3 class="skill-cloud__title">Programming & Tools</h3>
-                     <div class="skill-cloud__tags">
-                        <span class="skill-tag skill-tag--dev">R</span>
-                        <span class="skill-tag skill-tag--dev">Python</span>
-                        <span class="skill-tag skill-tag--dev">SQL</span>
-                        <span class="skill-tag skill-tag--dev">Shiny</span>
-                        <span class="skill-tag skill-tag--dev">Git</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Projects Section -->
-         <section id="projects" class="section section--projects" aria-labelledby="projects-title">
-            <div class="container">
-               <h2 id="projects-title" class="section__title">Showcase Projects</h2>
-               <div class="projects__grid">
-                  <!-- Current Project -->
-                  <div class="projects__column">
-                     <h3 class="project-section__title">Working On</h3>
-                     <div class="project-card project-card--dev">
-                        <img src="https://raw.githubusercontent.com/pmarcowski/dcelab/main/preview.png" 
-                           alt="Discrete Choice Experiments Lab" 
-                           class="project-card__image">
-                        <h3 class="project-card__title">Discrete Choice Experiments (DCE) with Shiny</h3>
-                        <p class="project-card__description">
-                           Flexible system for building discrete choice experiments using R Shiny, with tools for efficient design generation and analysis. Features deployment for both local and web environments, with automated cloud data storage.
-                        </p>
-                        <ul class="project-card__tags" aria-label="Technologies used">
-                           <li class="project-tag project-tag--dev">R</li>
-                           <li class="project-tag project-tag--dev">Shiny</li>
-                           <li class="project-tag project-tag--da">Data Collection</li>
-                        </ul>
-                        <div class="project-card__links">
-                           <a href="https://github.com/pmarcowski/dcelab"
-                              target="_blank" rel="noopener noreferrer"
-                              class="btn btn--sm" aria-label="View DCE Lab code on GitHub">
-                           <i class="fab fa-github" aria-hidden="true"></i> View Code
-                           </a>
-                           <a href="https://pmarcowski.shinyapps.io/example_experiment/"
-                              target="_blank" rel="noopener noreferrer"
-                              class="btn btn--sm" aria-label="Open live demo of DCE Lab">
-                           <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
-                           </a>
+                <!-- Grid Layout for Content -->
+                <div class="content-grid">
+                    <!-- Projects Section -->
+                    <section class="grid-section projects-section">
+                        <h2 class="section-title">Projects</h2>
+                        <div class="projects-grid">
+                            <!-- Project 1 -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="https://raw.githubusercontent.com/pmarcowski/dcelab/main/preview.png" alt="Discrete Choice Experiments Lab">
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">Discrete Choice Experiments (DCE) with Shiny</h3>
+                                    <p class="project-desc">Flexible system for building discrete choice experiments using R Shiny, with tools for efficient design generation, online and offline deployment, data collection, and cloud storage.</p>
+                                    <div class="project-tags">
+					<span class="project-tag">Data Collection</span>
+                                        <span class="project-tag">R</span>
+                                        <span class="project-tag">Shiny</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/pmarcowski/dcelab" class="content-link"><i class="fa-brands fa-github" aria-hidden="true"></i> View Code</a>
+                                        <a href="https://pmarcowski.shinyapps.io/example_experiment/" class="content-link"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 2 -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="https://raw.githubusercontent.com/pmarcowski/effort-choice-models/main/preview.png" alt="Effort-Based Choice Modeling">
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">Predicting Behavior in Economic Choice</h3>
+                                    <p class="project-desc">Research framework analyzing effort-based economic decisions, implementing computational models to evaluate how effort influences outcome valuation.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">Behavioral Models</span>
+					<span class="project-tag">R</span>
+					<span class="project-tag">Python</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/pmarcowski/effort-choice-models" class="content-link"><i class="fa-brands fa-github" aria-hidden="true"></i> View Code</a>
+                                        <a href="https://przemyslawmarcowski.com/projects/dual-power" class="content-link"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 3 -->
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="https://raw.githubusercontent.com/pmarcowski/doge-growth/main/preview.png" alt="Canine Growth Prediction Model">
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">Canine Growth Prediction Model and Application</h3>
+                                    <p class="project-desc">Bayesian predictive model for dog growth trajectories based on the von Bertalanffy growth curve, implemented in a Shiny app for personalized predictions.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">Bayesian Modeling</span>
+					<span class="project-tag">R</span>
+                                        <span class="project-tag">Shiny</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/pmarcowski/doge-growth" class="content-link"><i class="fa-brands fa-github" aria-hidden="true"></i> View Code</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                  <!-- Recent Project -->
-                  <div class="projects__column">
-                     <h3 class="project-section__title">Recent Project</h3>
-                     <div class="project-card project-card--da">
-                        <img src="https://raw.githubusercontent.com/pmarcowski/effort-choice-models/main/preview.png" 
-                           alt="Effort-Based Choice Modeling" 
-                           class="project-card__image">
-                        <h3 class="project-card__title">Predicting Behavior in Effort-Based Choice</h3>
-                        <p class="project-card__description">
-                           Research framework analyzing effort-based economic decisions, implementing computational models to evaluate how effort influences outcome valuation. Includes tools for model comparison, parameter estimation, agent-based simulation, and statistical analysis.
-                        </p>
-                        <ul class="project-card__tags" aria-label="Technologies used">
-                           <li class="project-tag project-tag--dev">R</li>
-                           <li class="project-tag project-tag--da">Behavioral Economics</li>
-                           <li class="project-tag project-tag--ds">Statistical Modeling</li>
-                        </ul>
-                        <div class="project-card__links">
-                           <a href="https://github.com/pmarcowski/effort-choice-models"
-                              target="_blank" rel="noopener noreferrer"
-                              class="btn btn--sm" aria-label="View Effort-Based Choice Modeling code on GitHub">
-                           <i class="fab fa-github" aria-hidden="true"></i> View Code
-                           </a>
-                           <a href="https://przemyslawmarcowski.com/projects/dual-power"
-                              target="_blank" rel="noopener noreferrer"
-                              class="btn btn--sm" aria-label="Open live demo of Effort-Based Choice Modeling">
-                           <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
-                           </a>
+                        <div class="more-container">
+                            <a href="https://github.com/pmarcowski" class="btn">More Projects</a>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="view-more">
-                  <a href="https://github.com/pmarcowski"
-                     target="_blank" rel="noopener noreferrer"
-                     class="btn btn--outline" aria-label="View more projects on GitHub">
-                  View More Projects
-                  </a>
-               </div>
+                    </section>
+                    
+                    <!-- Skills Section -->
+                    <section class="grid-section skills-section">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="skills-card">
+                            <div class="skills-cloud">
+                                <span class="skill-tag">R</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Statistical Modeling</span>
+                                <span class="skill-tag">Predictive Modeling</span>
+                                <span class="skill-tag">Time Series</span>
+                                <span class="skill-tag">Experiment Design</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Quantitative Methods</span>
+                                <span class="skill-tag">Data Visualization</span>
+                                <span class="skill-tag">Shiny</span>
+                            </div>
+                        </div>
+                        <div class="more-container">
+                            <a href="https://www.linkedin.com/in/przemyslaw-marcowski/" class="btn">Professional Experience</a>
+                        </div>
+                    </section>
+                    
+                    <!-- Publication Section -->
+                    <section class="grid-section publication-section">
+                        <h2 class="section-title">Recent Publication</h2>
+                        <div class="publication-card">
+                            <h3 class="publication-title">People conform to social norms when gambling with lives or money</h3>
+                            <p class="publication-authors">Jiang, Y., Marcowski, P., Ryazanov, A., & Winkielman, P. (2023)</p>
+                            <p class="publication-journal">Scientific Reports, 13(1), 853 (2023)</p>
+                            <p class="publication-abstract">This paper examines how social influence shapes risk decisions in moral and monetary contexts, showing people shift preferences to match group norms. Results showed time-persistent conformity effects that vary between moral and monetary domains and between gain and loss scenarios.</p>
+                            <div class="project-links">
+                                <a href="https://doi.org/10.1038/s41598-023-27462-1" class="content-link"><i class="fa-solid fa-book" aria-hidden="true"></i> View Publication</a>
+                            </div>
+                        </div>
+                        <div class="more-container">
+                            <a href="https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en" class="btn">More Publications</a>
+                        </div>
+                    </section>
+                    
+                    <!-- Contact Section -->
+                    <section class="grid-section contact-section">
+                        <div class="contact-container">
+                            <a href="mailto:p.marcowski@gmail.com" class="btn">Contact Me</a>
+                        </div>
+                    </section>
+                </div>
             </div>
-         </section>
-         <!-- Publications Section -->
-         <section id="publications" class="section section--publications" aria-labelledby="publications-title">
-            <div class="container">
-               <h2 id="publications-title" class="section__title">Last Publication</h2>
-               <div class="publications__list">
-                  <div class="publication-card publication-card--da">
-                     <div class="publication-card__image">
-                        <img src="assets/images/2023_scientificReports_moralChoice.png" alt="People conform to social norms when gambling with lives or money">
-                     </div>
-                     <div class="publication-card__content">
-                        <h3 class="publication-card__title">People conform to social norms when gambling with lives or money</h3>
-                        <p class="publication-card__authors">Jiang, Y., <strong>Marcowski, P.</strong>, Ryazanov, A., & Winkielman, P.</p>
-                        <p class="publication-card__journal">Scientific Reports, 13(1), 853 (2023)</p>
-                        <a href="https://doi.org/10.1038/s41598-023-27462-1"
-                           target="_blank" rel="noopener noreferrer"
-                           class="btn btn--sm" aria-label="View publication on social norms in gambling">
-                        <i class="fas fa-book" aria-hidden="true"></i> View Publication
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="view-more">
-                  <a href="https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en"
-                     target="_blank" rel="noopener noreferrer"
-                     class="btn btn--outline" aria-label="View more publications on Google Scholar">
-                  View More Publications
-                  </a>
-               </div>
-            </div>
-         </section>
-         <!-- Contact Section -->
-         <section id="contact" class="section section--contact" aria-labelledby="contact-title">
-            <div class="container">
-               <h2 id="contact-title" class="section__title">Contact</h2>
-               <form action="https://formspree.io/f/xvoeervl" method="POST" class="contact-form">
-                  <div class="form-group">
-                     <label for="name">Name</label>
-                     <input type="text" id="name" name="name" required aria-required="true">
-                  </div>
-                  <div class="form-group">
-                     <label for="email">Email</label>
-                     <input type="email" id="email" name="email" required aria-required="true">
-                  </div>
-                  <div class="form-group">
-                     <label for="subject">Subject</label>
-                     <input type="text" id="subject" name="subject" required aria-required="true">
-                  </div>
-                  <div class="form-group">
-                     <label for="message">Message</label>
-                     <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-                  </div>
-                  <div class="form-submit">
-                     <button type="submit" class="btn btn--primary">Send Message</button>
-                  </div>
-               </form>
-            </div>
-         </section>
-      </main>
-      <!-- Footer -->
-      <footer class="footer" role="contentinfo">
-         <div class="container">
-            <p>&copy; 2024 Przemyslaw Marcowski. All rights reserved.</p>
-         </div>
-      </footer>
-      <!-- Scripts -->
-      <script src="assets/script.js"></script>
-   </body>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer-text">© 2025 Przemyslaw Marcowski. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Include jQuery for better cross-browser compatibility with smooth scrolling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
