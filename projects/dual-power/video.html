@@ -95,11 +95,21 @@
          <button class="info-button" id="infoBtn" aria-label="Toggle description">i</button>
          <div class="text-overlay" id="textOverlay">
             <button class="close-button" id="closeBtn" aria-label="Close description">×</button>
-            <p>This stylized simulation visualizes an <b>agent</b> (represented by a knight) making <b>effort-reward decisions</b> while navigating a procedural dungeon. Using a <b>dual-system power model</b>, the agent calculates <b>subjective value</b> (sv) for each room option according to: sv(x) = x × [1 + ωδ₁E^γ₁ - (1-ω)δ₂E^γ₂], where <b>x</b> is the nominal reward value (<b>coins</b>), <b>E</b> is effort-challenge level (<b>swords</b>), and other parameters represent individual effort preferences.</p>
-            <p>For example, when facing a room with 5 coins requiring 3 swords of effort, the agent calculates the <b>positive contribution</b> from effort (potentially enhancing value) and subtracts the <b>negative contribution</b> (effort cost), resulting in a final subjective value that may be higher or lower than the nominal value.</p>
-            <p>As the agent clears rooms, it expends <b>energy</b> from its limited energy pool to overcome challenges. The agent's accumulated rewards (coins collected) are displayed as the <b>Score</b>, representing overall success.</p>
-            <p>Room outlines are <b>color-coded</b> to indicate challenge progression: <b>green</b> for low challenge, <b>yellow</b> for medium, and <b>red</b> for high challenge. The agent evaluates adjacent rooms, balancing reward potential against required effort, with calculated subjective values ("<b>V</b>" icons) displayed during decision phases.</p>
-            <p>The visualization demonstrates how effort can have <b>positive</b>, <b>negative</b>, or <b>nonmonotonic</b> impacts on value as the agent optimizes resource-constrained choices.</p>
+            <p><b>Overview</b><br>
+               This stylized simulation visualizes an <b>agent</b> (represented by a knight) making <b>effort-reward decisions</b> while navigating a procedural dungeon. Using a <b>dual-system power model</b>, the agent calculates <b>subjective value</b> (<b>v</b>) for each room option according to: v(x) = x × [1 + ωδ₁E^γ₁ - (1-ω)δ₂E^γ₂], where <b>x</b> is the nominal reward value (<b>coins</b>), <b>E</b> is effort-challenge level (<b>swords</b>), and other parameters represent individual effort preferences.
+            </p>
+            <p><b>Decision Process</b><br>
+               The agent evaluates adjacent rooms, balancing reward potential against required effort, with calculated subjective values (<b>v</b>) displayed during decision phases. For example, when facing a room with 5 coins requiring 3 swords of effort, the agent calculates the <b>positive contribution</b> from effort (potentially enhancing value) and subtracts the <b>negative contribution</b> (effort cost), resulting in a final subjective value that may be higher or lower than the nominal value.
+            </p>
+            <p><b>Environment</b><br>
+               Room outlines are <b>color-coded</b> to indicate challenge progression: <b>green</b> for low challenge, <b>yellow</b> for medium, and <b>red</b> for high challenge.
+            </p>
+            <p><b>Resources</b><br>
+               As the agent clears rooms, it expends <b>energy</b> from its limited energy pool to overcome challenges. The agent's accumulated rewards (coins collected) are displayed as the <b>Score</b>, representing overall success.
+            </p>
+            <p><b>Insights</b><br>
+               The visualization demonstrates how effort can have <b>positive</b>, <b>negative</b>, or <b>nonmonotonic</b> impacts on value as the agent optimizes resource-constrained choices.
+            </p>
          </div>
       </div>
       <script>
