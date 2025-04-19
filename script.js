@@ -17,7 +17,7 @@ $(document).ready(function() {
         event.preventDefault();
         
         $('html, body').stop().animate({
-            scrollTop: $('#content').offset().top
+            scrollTop: $('#section-title').offset().top
         }, 1000); // Slightly longer animation for main scroll
     });
     
