@@ -23,11 +23,6 @@
         padding: 8px 16px;
         width: 200px;
       }
-      #startup-message {
-        margin-top: 10px;
-        visibility: hidden;
-        height: 1.2em;
-      }
     </style>
   </head>
   <body>
@@ -37,13 +32,6 @@
       <button onclick="location.href='https://dual-power-model.onrender.com/'" id="model-btn">Model Visualizer</button>
       <p>Simulation of an agent making effort-reward decisions using the dual power model.</p>
       <button onclick="location.href='video.html'">Model Simulation</button>
-      <p id="startup-message">Please allow up to 30 seconds for startup...</p>
    </div>
-
-    <script>
-      document.getElementById('model-btn').addEventListener('click', function() {
-        document.getElementById('startup-message').style.visibility = 'visible';
-      });
-    </script>
   </body>
 </html>
