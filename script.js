@@ -1,29 +1,27 @@
-$(document).ready(function () {
+/*
+ * Theme toggle
+ * Preserves the same contract as before:
+ *   - html[data-theme="light"|"dark"] attribute
+ *   - localStorage key: 'theme'
+ * The initial theme value is set by the inline FOUC-prevention script
+ * in <head> before first paint, so users never see a wrong-theme flash.
+ */
 
-    // --- Theme Toggle ---
-    const $htmlElement = $('html');
-    const $themeIcon = $('#theme-icon');
+(function () {
+   'use strict';
 
-    // Check saved theme or default to light for this specific design
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
+   var html = document.documentElement;
+   var btn  = document.getElementById('theme-toggle-btn');
+   if (!btn) return;
 
-    // Click handler for the NEW button ID
-    $('#theme-toggle-btn').on('click', function () {
-        const currentTheme = $htmlElement.attr('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-    });
-
-    function setTheme(theme) {
-        $htmlElement.attr('data-theme', theme);
-        localStorage.setItem('theme', theme);
-
-        // Icon update
-        if (theme === 'dark') {
-            $themeIcon.removeClass('fa-moon fa-sun').addClass('fa-sun'); // Sun icon implies "Light mode available"
-        } else {
-            $themeIcon.removeClass('fa-sun fa-moon').addClass('fa-moon'); // Moon icon implies "Dark mode available"
-        }
-    }
-});
+   btn.addEventListener('click', function () {
+      var current = html.getAttribute('data-theme') || 'dark';
+      var next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      try {
+         localStorage.setItem('theme', next);
+      } catch (e) {
+         /* storage may be disabled; degrade gracefully */
+      }
+   });
+})();

@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Przemysław Marcowski</title>
+
    <!-- Meta Tags and SEO (Preserved) -->
    <meta name="description"
       content="Personal website of Przemysław Marcowski, a computational scientist specializing in data science, decision science, ML/AI, and human signals.">
    <meta name="keywords"
       content="Przemek Marcowski, Przemysław Marcowski, computational scientist, data science, decision science, ML/AI, machine learning, statistical modeling, multimodal data, human signals, scientific computing, personal website">
+
    <!-- Open Graph Protocol -->
    <meta property="og:title" content="Przemysław Marcowski" />
    <meta property="og:description"
       content="Personal website of Przemysław Marcowski, a computational scientist specializing in data science, decision science, ML/AI, and human signals." />
    <meta property="og:url" content="https://pmarcowski.com/" />
    <meta property="og:type" content="website" />
+   <meta property="og:image" content="https://pmarcowski.com/assets/photo-01.png" />
+
    <!-- Favicon -->
    <link rel="icon" href="favicon.png" type="image/png">
-   <!-- FontAwesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <!-- Google Fonts: Space Grotesk (Display) & Manrope (Body) -->
+
+   <!-- Google Fonts: Archivo (body) + Archivo Black (display) -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;0,900;1,700;1,900&family=Archivo+Black&display=swap"
       rel="stylesheet">
+
    <!-- External CSS -->
    <link rel="stylesheet" href="styles.css">
+
    <!-- Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-62KDXH6Q7G"></script>
    <script>
@@ -38,168 +41,216 @@
       gtag('js', new Date());
       gtag('config', 'G-62KDXH6Q7G');
    </script>
+
    <!-- Schema.org Structured Data -->
    <script type="application/ld+json">
-         {
-           "@context": "https://schema.org",
-           "@type": "Person",
-           "name": "Przemysław Marcowski",
-           "alternateName": ["Przemyslaw Marcowski", "Przemek Marcowski"],
-           "jobTitle": "Computational Scientist",
-           "affiliation": {
-             "@type": "Organization",
-             "name": "University of California, San Diego"
-           },
-           "knowsAbout": ["Data Science", "Decision Science", "Machine Learning", "Scientific Computing", "Statistical Modeling", "Experimental Design", "Data Pipelines", "Behavioral Data", "Multimodal Data"],
-           "url": "https://pmarcowski.com/",
-           "description": "Przemysław Marcowski is a computational scientist specializing in data science, decision science, ML/AI, and human signals.",
-           "sameAs": [
-             "https://github.com/pmarcowski",
-             "https://www.linkedin.com/in/przemyslaw-marcowski/",
-             "https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en",
-             "https://www.researchgate.net/profile/Przemyslaw-Marcowski"
-           ],
-           "image": [
-             "https://pmarcowski.com/assets/photo-01.png"  
-           ]
-         }
-      </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Przemysław Marcowski",
+        "alternateName": ["Przemyslaw Marcowski", "Przemek Marcowski"],
+        "jobTitle": "Computational Scientist",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "University of California, San Diego"
+        },
+        "knowsAbout": ["Data Science", "Decision Science", "Machine Learning", "Scientific Computing", "Statistical Modeling", "Experimental Design", "Data Pipelines", "Behavioral Data", "Multimodal Data"],
+        "url": "https://pmarcowski.com/",
+        "description": "Przemysław Marcowski is a computational scientist specializing in data science, decision science, ML/AI, and human signals.",
+        "sameAs": [
+          "https://github.com/pmarcowski",
+          "https://www.linkedin.com/in/przemyslaw-marcowski/",
+          "https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en",
+          "https://www.researchgate.net/profile/Przemyslaw-Marcowski"
+        ],
+        "image": [
+          "https://pmarcowski.com/assets/photo-01.png"
+        ]
+      }
+   </script>
+
+   <!-- Early theme init to prevent flash of wrong theme -->
+   <script>
+      (function () {
+         try {
+            var t = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', t);
+         } catch (e) { /* localStorage unavailable */ }
+      })();
+   </script>
 </head>
 
 <body>
-   <div class="bold-wrapper">
 
-      <!-- Profile Section (Consolidated) -->
-      <article class="card profile-card">
-         <div class="card-inner">
-            <!-- Integrated Theme Toggle -->
-            <button id="theme-toggle-btn" class="theme-corner-btn" aria-label="Toggle Theme">
-               <i id="theme-icon" class="fa-solid fa-sun"></i>
-            </button>
+   <!-- Skip link for keyboard users -->
+   <a href="#main" class="skip-link">Skip to content</a>
 
-            <div class="header-group">
-               <h1 class="name">Przemek Marcowski</h1>
-               <p class="role-text">Computational Scientist</p>
-            </div>
-            <p class="tagline">Using data to find answers, solve problems, and make things interesting.</p>
+   <main id="main" class="page">
 
-            <div class="action-grid">
-               <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing"
-                  target="_blank" class="btn btn-primary">
-                  Resume <i class="fa-solid fa-arrow-up-right-from-square"></i>
-               </a>
-               <a href="https://github.com/pmarcowski" class="btn btn-icon" aria-label="GitHub"><i
-                     class="fa-brands fa-github"></i></a>
-               <a href="https://www.linkedin.com/in/przemyslaw-marcowski/" class="btn btn-icon" aria-label="LinkedIn"><i
-                     class="fa-brands fa-linkedin"></i></a>
-               <a href="https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en" class="btn btn-icon"
-                  aria-label="Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-               <a href="mailto:p.marcowski@gmail.com" class="btn btn-icon" aria-label="Email"><i
-                     class="fa-solid fa-envelope"></i></a>
-            </div>
+      <!-- ========== HERO ========== -->
+      <section class="hero" aria-labelledby="name">
+         <button type="button"
+                 class="theme-toggle"
+                 id="theme-toggle-btn"
+                 aria-label="Toggle color theme"
+                 title="Toggle theme">
+            <span class="ic ic-moon" aria-hidden="true">
+               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+               </svg>
+            </span>
+            <span class="ic ic-sun" aria-hidden="true">
+               <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="4.5" fill="currentColor"/>
+                  <g stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none">
+                     <line x1="12" y1="2" x2="12" y2="4.2"/>
+                     <line x1="12" y1="19.8" x2="12" y2="22"/>
+                     <line x1="4.93" y1="4.93" x2="6.48" y2="6.48"/>
+                     <line x1="17.52" y1="17.52" x2="19.07" y2="19.07"/>
+                     <line x1="2" y1="12" x2="4.2" y2="12"/>
+                     <line x1="19.8" y1="12" x2="22" y2="12"/>
+                     <line x1="4.93" y1="19.07" x2="6.48" y2="17.52"/>
+                     <line x1="17.52" y1="6.48" x2="19.07" y2="4.93"/>
+                  </g>
+               </svg>
+            </span>
+         </button>
+
+         <aside class="affiliations" aria-label="Affiliations">
+            <a href="https://winkielmanlab.ucsd.edu/" target="_blank" rel="noopener">@UCSD</a>
+            <a href="https://visualcue.io/" target="_blank" rel="noopener">@VisualCueLab</a>
+         </aside>
+
+         <span class="kicker">Computational Scientist</span>
+
+         <h1 class="name" id="name">
+            <span class="ln">Przemek</span>
+            <span class="ln">Marcowski</span>
+         </h1>
+
+         <p class="tagline">Using data to find answers, solve problems, and make things interesting.</p>
+
+         <div class="actions">
+            <a href="https://docs.google.com/document/d/1JhHGG_0fFY6Z7CG7cEIUqTyt_gbZgm91DBycV61Edxk/edit?usp=sharing"
+               target="_blank" rel="noopener" class="btn">
+               Resume <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <nav class="socials" aria-label="Social links">
+               <a href="https://github.com/pmarcowski">GitHub</a>
+               <a href="https://www.linkedin.com/in/przemyslaw-marcowski/">LinkedIn</a>
+               <a href="https://scholar.google.com/citations?user=sB2hWn0AAAAJ&hl=en">Scholar</a>
+               <a href="mailto:p.marcowski@gmail.com">Email</a>
+            </nav>
          </div>
-      </article>
+      </section>
 
-      <!-- Project 1: DCE Lab -->
-      <article class="card project-card p1">
-         <div class="card-inner">
-            <div class="project-top">
-               <span class="mono-tag">PLATFORM</span>
-               <h3>DCE Lab</h3>
-               <p>R package for Discrete Choice Experiments (design, collection, storage).</p>
-            </div>
-            <div class="project-bottom">
-               <a href="https://github.com/pmarcowski/dcelab" class="text-link small" aria-label="View Code">Code</a>
-               <span class="separator">&middot;</span>
-               <a href="https://pmarcowski.shinyapps.io/example_experiment/" class="text-link small"
-                  aria-label="View Demo">Demo</a>
-            </div>
+      <!-- ========== WORK ========== -->
+      <section class="work" aria-labelledby="work-heading">
+         <div class="sec-bar">
+            <h2 id="work-heading" class="title">Selected Work</h2>
+            <span class="flex"></span>
          </div>
-      </article>
+         <div class="projects">
 
-      <!-- Project 2: Choice Models -->
-      <article class="card project-card p2">
-         <div class="card-inner">
-            <div class="project-top">
-               <span class="mono-tag">MODELING</span>
-               <h3>Choice Models</h3>
-               <p>Computational analysis and prediction of effort-based economic decisions.</p>
-            </div>
-            <div class="project-bottom">
-               <a href="https://github.com/pmarcowski/effort-choice-models" class="text-link small"
-                  aria-label="View Code">Code</a>
-               <span class="separator">&middot;</span>
-               <a href="https://pmarcowski.com/projects/dual-power" class="text-link small"
-                  aria-label="View Demo">Demo</a>
-            </div>
+            <article class="project">
+               <div class="p-top">
+                  <span class="p-num" aria-hidden="true">/01</span>
+                  <span class="p-tag">Package</span>
+               </div>
+               <h3 class="p-title">DCE Lab</h3>
+               <p class="p-desc">R package for building Discrete Choice Experiments end-to-end, with D-efficient designs and Shiny deployment.</p>
+               <div class="p-links">
+                  <a href="https://github.com/pmarcowski/dcelab" aria-label="View Code (DCE Lab)">Code</a>
+                  <a href="https://pmarcowski.shinyapps.io/example_experiment/" aria-label="View Demo (DCE Lab)">Demo</a>
+               </div>
+            </article>
+
+            <article class="project">
+               <div class="p-top">
+                  <span class="p-num" aria-hidden="true">/02</span>
+                  <span class="p-tag">Modeling</span>
+               </div>
+               <h3 class="p-title">Choice Models</h3>
+               <p class="p-desc">Computational models of effort-based economic choice, where effort shapes value as both cost and reward.</p>
+               <div class="p-links">
+                  <a href="https://github.com/pmarcowski/effort-choice-models" aria-label="View Code (Choice Models)">Code</a>
+                  <a href="https://pmarcowski.com/projects/dual-power" aria-label="View Demo (Choice Models)">Demo</a>
+               </div>
+            </article>
+
+            <article class="project">
+               <div class="p-top">
+                  <span class="p-num" aria-hidden="true">/03</span>
+                  <span class="p-tag">Intelligence</span>
+               </div>
+               <h3 class="p-title">Multimodal Content Analysis</h3>
+               <p class="p-desc">Multimodal engine for social intelligence, reading expression, speech, and language signals as they shape discourse.</p>
+               <div class="p-links">
+                  <a href="https://vimeo.com/1131135147" aria-label="Watch Demo (Multimodal Content Analysis)">Demo</a>
+               </div>
+            </article>
+
          </div>
-      </article>
+      </section>
 
-      <!-- Project 3: Multimodal Content Analysis -->
-      <article class="card project-card p3">
-         <div class="card-inner">
-            <div class="project-top">
-               <span class="mono-tag">AI / CV</span>
-               <h3>Multimodal Content Analysis</h3>
-               <p>Pipeline for synchronized analysis of face, voice, and text across social media content.</p>
+      <!-- ========== BOTTOM: PUB + SKILLS ========== -->
+      <section class="bottom">
+
+         <div class="pub-col">
+            <div class="sec-bar">
+               <h2 class="title">Recent Research</h2>
+               <span class="flex"></span>
             </div>
-            <div class="project-bottom">
-               <a href="https://vimeo.com/1131135147" class="text-link small" aria-label="Watch Demo">Demo</a>
-            </div>
+
+            <article class="pub">
+               <span class="pub-journal">J. Exp. Psych: General</span>
+               <h3 class="pub-title">Effort can have positive, negative, and nonmonotonic impacts on outcome value in economic choice.</h3>
+               <p class="pub-desc">Investigation into how effort costs and benefits interact to shape valuation.</p>
+               <div class="pub-actions">
+                  <a href="https://www.researchgate.net/publication/390371836_Effort_can_have_positive_negative_and_nonmonotonic_impacts_on_outcome_value_in_economic_choice"
+                     class="primary" target="_blank" rel="noopener">
+                     Read Paper <span class="arrow" aria-hidden="true">↗</span>
+                  </a>
+                  <span class="media-label">Media:</span>
+                  <a href="https://theconversation.com/hard-work-feels-worth-it-but-only-after-its-done-new-research-on-how-people-value-effort-252684"
+                     class="media-link" target="_blank" rel="noopener">The Conversation</a>
+                  <a href="https://spsp.org/news/character-and-context-blog/marcowski-bialaszek-winkielman-why-hard-work-sometimes-feels-worth-it-and-other-times-doesnt"
+                     class="media-link" target="_blank" rel="noopener">SPSP</a>
+               </div>
+
+               <div class="pub-more">
+                  <span class="pub-journal">Book Chapter &middot; Springer</span>
+                  <h4 class="pub-title-sm">The Role of Social Policy Dependent and Independent Decision Attributes and Behavioral Interventions in Vaccination Choices</h4>
+                  <p class="pub-book-sm">In <em>Vaccines and Vaccinations: A Psychological Perspective</em></p>
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-032-18151-0_5"
+                     class="chapter-link" target="_blank" rel="noopener">
+                     Read Chapter <span class="arrow" aria-hidden="true">↗</span>
+                  </a>
+               </div>
+            </article>
          </div>
-      </article>
 
-      <!-- Skills -->
-      <div class="card skills-card">
-         <div class="card-inner">
-            <h3>Skills</h3>
-            <ul class="skills-list">
-               <li>Data Science</li>
-               <li>Machine Learning</li>
-               <li>Statistical Modeling</li>
-               <li>Scientific Computing</li>
-               <li>Experimental Design</li>
-               <li>Data Pipelines</li>
-               <li>Decision Science</li>
+         <div class="skills-col">
+            <div class="sec-bar">
+               <h2 class="title">Skills</h2>
+               <span class="flex"></span>
+            </div>
+            <ul class="skills">
+               <li class="skill">Data Science</li>
+               <li class="skill">Machine Learning</li>
+               <li class="skill">Statistical Modeling</li>
+               <li class="skill">Scientific Computing</li>
+               <li class="skill">Experimental Design</li>
+               <li class="skill">Data Pipelines</li>
+               <li class="skill">Decision Science</li>
             </ul>
          </div>
-      </div>
 
-      <!-- Publication -->
-      <article class="card pub-card">
-         <div class="card-inner">
-            <div class="pub-layout">
-               <div class="pub-meta">
-                  <span class="mono-tag highlight">RECENT RESEARCH</span>
-                  <span class="journal">J. Exp. Psych: General</span>
-               </div>
-               <h3 class="pub-title">Effort can have positive, negative, and nonmonotonic impacts on outcome value in
-                  economic choice.</h3>
-               <p class="pub-desc">Investigation into how effort costs and benefits interact to shape valuation.</p>
+      </section>
+   </main>
 
-               <div class="pub-links">
-                  <a href="https://www.researchgate.net/publication/390371836_Effort_can_have_positive_negative_and_nonmonotonic_impacts_on_outcome_value_in_economic_choice"
-                     class="text-link">Read Paper <i class="fa-solid fa-arrow-right"></i></a>
-                  <div class="media-links">
-                     <span class="separator">/</span>
-                     <span class="media-label">Media:</span>
-                     <a href="https://theconversation.com/hard-work-feels-worth-it-but-only-after-its-done-new-research-on-how-people-value-effort-252684"
-                        class="text-link small">The Conversation</a>
-                     <span class="separator">/</span>
-                     <a href="https://spsp.org/news/character-and-context-blog/marcowski-bialaszek-winkielman-why-hard-work-sometimes-feels-worth-it-and-other-times-doesnt"
-                        class="text-link small">SPSP</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </article>
-
-   </div>
-
-   <!-- jQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-   <!-- Script -->
-   <script src="script.js"></script>
+   <!-- Theme toggle script -->
+   <script src="script.js" defer></script>
 </body>
 
 </html>
