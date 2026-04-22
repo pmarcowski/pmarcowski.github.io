@@ -1,10 +1,7 @@
 /*
- * Theme toggle
- * Preserves the same contract as before:
- *   - html[data-theme="light"|"dark"] attribute
- *   - localStorage key: 'theme'
- * The initial theme value is set by the inline FOUC-prevention script
- * in <head> before first paint, so users never see a wrong-theme flash.
+ * Theme toggle — syncs html[data-theme] with localStorage 'theme'.
+ * Initial value is set by the inline FOUC-prevention script in <head>
+ * before first paint.
  */
 
 (function () {
